@@ -6,7 +6,7 @@ export default function HomePage() {
     <section className="bg-slate-900 px-4 py-14 sm:px-6 sm:py-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Image Section */}
-        <div className="w-full flex justify-center mb-10 lg:mb-0">
+        <div className="w-full flex justify-center mb-4 lg:mb-0">
           <Image
             src={homepage}
             alt="homepage"
