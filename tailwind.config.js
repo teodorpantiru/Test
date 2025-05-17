@@ -5,7 +5,11 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      scrollMargin: {
+        24: '6rem',
+      },
+    },
   },
   plugins: [],
 }

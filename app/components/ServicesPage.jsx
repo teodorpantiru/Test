@@ -1,6 +1,6 @@
-import { useRef, useEffect } from "react";
-import react from "react";
-import React from "react";
+"use client";
+
+import React, { useRef, useLayoutEffect } from "react";
 import Services from "./Services";
 import ServicesDetails from "./ServicesDetails";
 
@@ -12,9 +12,14 @@ export default function ServicesPage({
 }) {
   const detailsRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (detailsRef.current) {
-      detailsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(() => {
+        detailsRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 10); // slight delay helps on mobile
     }
   }, [isSelected]);
 
@@ -39,7 +44,10 @@ export default function ServicesPage({
               </li>
 
               {isSelected === service.slug && (
-                <li ref={detailsRef} className="col-span-full">
+                <li
+                  ref={detailsRef}
+                  className="col-span-full scroll-mt-24" // Adjust margin-top if sticky navbar
+                >
                   <div className="bg-white shadow-md rounded-xl p-6 mt-4">
                     <ServicesDetails
                       selectedService={service}
