@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 export default function ServicesDetails({ selectedService, onCloseService }) {
   if (!selectedService || !selectedService.content) return null;
 

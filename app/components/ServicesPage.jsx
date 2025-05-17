@@ -22,7 +22,7 @@ export default function ServicesPage({
           behavior: "smooth",
           block: "start",
         });
-      }, 50); // try increasing to 100ms if needed
+      }, 100); // try increasing to 100ms if needed
     });
   }, [isSelected]);
 
