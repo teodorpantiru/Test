@@ -7,14 +7,17 @@ export default function ServicesDetails({ selectedService, onCloseService }) {
 
   return (
     <div className="text-gray-800 space-y-6 leading-relaxed text-base">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold">{selectedService.title}</h2>
+      <div className="flex items-left justify-end">
         <button
           onClick={onCloseService}
           className="flex text-md text-gray-600 hover:underline items-center align-center justify-center text-center"
         >
-          &larr;
+          ✖
         </button>
+      </div>
+
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-2xl font-bold mb-5">{selectedService.title}</h2>
       </div>
 
       {selectedService.content.map((block, index) => {
