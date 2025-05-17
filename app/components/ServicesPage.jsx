@@ -12,7 +12,6 @@ export default function ServicesPage({
 }) {
   const detailsRef = useRef(null);
 
-  // Scroll into view AFTER rendering the new service
   useEffect(() => {
     if (detailsRef.current) {
       detailsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
