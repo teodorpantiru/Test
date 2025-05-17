@@ -1,6 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import Services from "./Services";
-import ServicesDetails from "./ServicesDetails";
+import { useRef, useEffect } from "react";
 
 export default function ServicesPage({
   onSelectServices,
@@ -10,7 +8,7 @@ export default function ServicesPage({
 }) {
   const detailsRef = useRef(null);
 
-  // Auto-scroll to expanded service
+  // Scroll into view AFTER rendering the new service
   useEffect(() => {
     if (detailsRef.current) {
       detailsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -38,7 +36,7 @@ export default function ServicesPage({
               </li>
 
               {isSelected === service.slug && (
-                <li className="col-span-full" ref={detailsRef}>
+                <li ref={detailsRef} className="col-span-full">
                   <div className="bg-white shadow-md rounded-xl p-6 mt-4">
                     <ServicesDetails
                       selectedService={service}
