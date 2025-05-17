@@ -1,24 +1,32 @@
-'use client'
+"use client";
 import Image from "next/image";
-import ServicesDetails from "./ServicesDetails";
 
-
-
-export default function Services({ id, src, title, onSelectServices, services }) {
-    return (
-        <li onClick={() => onSelectServices(id)} className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center transition duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:bg-gray-50" >
-            <Image
-                src={src}
-                alt={title}
-                width={200}
-                height={200}
-                className="rounded-full object-cover mb-4 w-48 h-48 transition duration-300 hover:scale-105"
-            />
-            <h3 className="text-lg font-semibold text-gray-800 transition-colors duration-300 hover:text-sky-700">
-                {title}
-                {services.id}
-            </h3>
-
-        </li >
-    );
+export default function Services({
+  id,
+  src,
+  title,
+  onSelectServices,
+  isSelected,
+}) {
+  return (
+    <div
+      onClick={() => onSelectServices(id)}
+      className={`w-full h-full cursor-pointer bg-white shadow-md rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 ${
+        isSelected === id ? "border border-sky-500" : ""
+      }`}
+    >
+      <Image
+        src={src}
+        alt={title}
+        width={96}
+        height={96}
+        className="rounded-full object-cover w-20 h-20 sm:w-24 sm:h-24 shrink-0"
+      />
+      <div className="text-center sm:text-left flex-1">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-800 hover:text-sky-700 transition-colors duration-300 leading-snug break-words">
+          {title}
+        </h3>
+      </div>
+    </div>
+  );
 }
