@@ -13,14 +13,17 @@ export default function ServicesPage({
   const detailsRef = useRef(null);
 
   useLayoutEffect(() => {
-    if (detailsRef.current) {
+    if (!detailsRef.current) return;
+
+    // Delay scrolling until DOM is fully updated and painted
+    requestAnimationFrame(() => {
       setTimeout(() => {
         detailsRef.current.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
-      }, 20); // slight delay helps on mobile
-    }
+      }, 50); // try increasing to 100ms if needed
+    });
   }, [isSelected]);
 
   return (
@@ -44,10 +47,7 @@ export default function ServicesPage({
               </li>
 
               {isSelected === service.slug && (
-                <li
-                  ref={detailsRef}
-                  className="col-span-full scroll-mt-24" // Adjust margin-top if sticky navbar
-                >
+                <li ref={detailsRef} className="col-span-full scroll-mt-28">
                   <div className="bg-white shadow-md rounded-xl p-6 mt-4">
                     <ServicesDetails
                       selectedService={service}
