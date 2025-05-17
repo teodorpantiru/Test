@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Services from "./Services";
 import ServicesDetails from "./ServicesDetails";
 
@@ -8,6 +8,15 @@ export default function ServicesPage({
   isSelected,
   onCloseService,
 }) {
+  const detailsRef = useRef(null);
+
+  // Auto-scroll to expanded service
+  useEffect(() => {
+    if (detailsRef.current) {
+      detailsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [isSelected]);
+
   return (
     <section className="bg-gray-100 py-24 px-6">
       <div className="max-w-7xl mx-auto">
@@ -18,7 +27,7 @@ export default function ServicesPage({
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {services.map((service) => (
             <React.Fragment key={service.slug}>
-              <li className="col-span-1 w-full">
+              <li className="col-span-1">
                 <Services
                   id={service.slug}
                   src={service.SourceImage}
@@ -29,8 +38,8 @@ export default function ServicesPage({
               </li>
 
               {isSelected === service.slug && (
-                <li key={`${service.slug}-details`} className="col-span-full">
-                  <div className="bg-white shadow-md rounded-xl p-6 mt-4 animate-fade-in">
+                <li className="col-span-full" ref={detailsRef}>
+                  <div className="bg-white shadow-md rounded-xl p-6 mt-4">
                     <ServicesDetails
                       selectedService={service}
                       onCloseService={onCloseService}

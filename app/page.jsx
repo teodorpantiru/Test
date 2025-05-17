@@ -10,12 +10,15 @@ import { useState } from "react";
 import servicesData from "./data/servicesData";
 
 export default function Home() {
-  const [services, setServices] = useState(servicesData);
+  const [services] = useState(servicesData);
   const [selectedService, setSelectedService] = useState("");
 
-  function handleSelectServices(id) {
-    setSelectedService(selectedService ? null : id);
-    console.log(id);
+  function handleSelectServices(slug) {
+    if (selectedService === slug) {
+      setSelectedService(null);
+    } else {
+      setSelectedService(slug);
+    }
   }
 
   function handleCloseService() {
@@ -23,7 +26,7 @@ export default function Home() {
   }
 
   return (
-    <div className="">
+    <div>
       <NavBar />
       <HomePage />
       <AboutUs />
@@ -33,7 +36,6 @@ export default function Home() {
         onSelectServices={handleSelectServices}
         onCloseService={handleCloseService}
       />
-
       <Contact />
       <Footer />
     </div>
