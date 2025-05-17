@@ -19,7 +19,7 @@ export default function ServicesPage({
           behavior: "smooth",
           block: "start",
         });
-      }, 10); // slight delay helps on mobile
+      }, 20); // slight delay helps on mobile
     }
   }, [isSelected]);
 
