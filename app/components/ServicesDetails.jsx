@@ -13,7 +13,7 @@ export default function ServicesDetails({ selectedService, onCloseService }) {
           onClick={onCloseService}
           className="flex text-md text-gray-600 hover:underline items-center align-center justify-center text-center"
         >
-          &larr; Inchide
+          &larr;
         </button>
       </div>
 
