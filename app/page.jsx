@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import servicesData from "./data/servicesData";
+import PriceSection from "./components/PriceSection";
 
 export default function Home() {
   const [services] = useState(servicesData);
@@ -36,6 +37,7 @@ export default function Home() {
         onSelectServices={handleSelectServices}
         onCloseService={handleCloseService}
       />
+      <PriceSection />
       <Contact />
       <Footer />
     </div>
