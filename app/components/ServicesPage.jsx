@@ -1,4 +1,8 @@
 import { useRef, useEffect } from "react";
+import react from "react";
+import React from "react";
+import Services from "./Services";
+import ServicesDetails from "./ServicesDetails";
 
 export default function ServicesPage({
   onSelectServices,
