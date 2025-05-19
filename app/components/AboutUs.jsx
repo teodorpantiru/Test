@@ -1,13 +1,20 @@
+"use client";
 import Image from "next/image";
 import security from "../../public/assets/security.webp";
 
-export default function AboutUs() {
+export default function AboutUs({ aboutRef }) {
   return (
-    <section className="bg-gray-100 py-16 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="relative isolate bg-gradient-to-br from-sky-100 via-white to-gray-100 py-48 px-6 overflow-hidden">
+      {/* Background grid pattern */}
+      <div className="absolute inset-0 pointer-events-none opacity-20 bg-[url('/grid.svg')] bg-repeat" />
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Text Content */}
         <div className="text-left">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6 border-b-2 border-gray-400 inline-block pb-2">
+          <h2
+            ref={aboutRef}
+            className="scroll-mt-28 text-4xl font-bold text-gray-800 mb-6 border-b-2 border-gray-400 inline-block pb-2"
+          >
             Despre noi
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed">

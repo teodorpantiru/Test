@@ -27,7 +27,7 @@ export default function ServicesPage({
   }, [isSelected]);
 
   return (
-    <section className="bg-gray-100 py-24 px-6">
+    <section className="bg-gray-100 py-28 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-10 border-b-2 inline-block pb-2">
           Serviciile Noastre

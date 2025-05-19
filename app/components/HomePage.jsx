@@ -17,7 +17,7 @@ export default function HomePage() {
         </div>
 
         {/* Text Section */}
-        <div className="text-white px-2 sm:px-4">
+        <div className="text-white px-2 py-16 sm:px-4">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left">
             CREMIL T.S.P.I
           </h1>
