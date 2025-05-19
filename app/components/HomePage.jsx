@@ -35,9 +35,9 @@ export default function HomePage() {
           </p>
 
           <div className="flex justify-center lg:justify-start">
-            <button className="bg-white text-slate-900 font-semibold px-6 py-2 rounded hover:bg-gray-200 transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+            <div className="bg-white text-slate-900 font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
               Citește mai mult
-            </button>
+            </div>
           </div>
         </div>
       </div>
