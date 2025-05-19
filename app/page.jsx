@@ -31,10 +31,11 @@ export default function Home() {
 
     const ref = refs[section];
     if (ref?.current) {
-      ref.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      const yOffset = -40; // adjust based on navbar height
+      const y =
+        ref.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   }
 

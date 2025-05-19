@@ -177,7 +177,7 @@ export default function NavBar({ onNavigate }) {
             Contact
           </a> */}
 
-          <div className="flex gap-4 pt-2 justify-center items-center">
+          <div className="flex gap-4 pt-2 justify-center ">
             <FaBuildingUser />
             <FaTools />
             <FaToolbox />
