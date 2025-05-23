@@ -15,19 +15,31 @@ export default function ServicesDetails({ selectedService, onCloseService }) {
       </div>
 
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold mb-5">{selectedService.title}</h2>
+        <h2 className="text-2xl font-bold mb-5">{selectedService.title}:</h2>
       </div>
 
       {selectedService.content.map((block, index) => {
         if (block.type === "paragraph") {
-          return <p key={index}>{block.text}</p>;
+          return (
+            <p
+              key={index}
+              className="text-gray-700 text-base sm:text-lg leading-relaxed text-left lg:text-left"
+            >
+              {block.text}
+            </p>
+          );
         }
 
         if (block.type === "list") {
           return (
             <ul key={index} className="list-disc list-inside space-y-1">
               {block.items.map((item, i) => (
-                <li key={i}>{item}</li>
+                <li
+                  key={i}
+                  className="text-gray-700 text-base sm:text-lg leading-relaxed text-left lg:text-left"
+                >
+                  {item}
+                </li>
               ))}
             </ul>
           );
@@ -35,7 +47,10 @@ export default function ServicesDetails({ selectedService, onCloseService }) {
 
         if (block.type === "question") {
           return (
-            <p key={index} className="font-semibold ">
+            <p
+              key={index}
+              className="text-gray-700 text-base sm:text-lg leading-relaxed text-left lg:text-left"
+            >
               {block.text}
             </p>
           );

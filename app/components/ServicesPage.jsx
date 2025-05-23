@@ -29,14 +29,14 @@ export default function ServicesPage({
   return (
     <section className="bg-gray-100 px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-32">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10 border-b-2 inline-block pb-2">
+        <h2 className="scroll-mt-28 text-4xl font-bold text-gray-800 mb-6 border-b-2 border-gray-400 inline-block pb-2">
           Serviciile Noastre
         </h2>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {services.map((service) => (
             <React.Fragment key={service.slug}>
-              <li className="col-span-1">
+              <li className="col-span-1 ">
                 <Services
                   id={service.slug}
                   src={service.SourceImage}

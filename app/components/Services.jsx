@@ -23,7 +23,7 @@ export default function Services({
         className="rounded-full object-cover w-20 h-20 sm:w-24 sm:h-24 shrink-0"
       />
       <div className="text-center sm:text-left flex-1">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-800 hover:text-sky-700 transition-colors duration-300 leading-snug break-words">
+        <h3 className="text-base font-semibold sm:text-md text-center lg:text-left text-gray-800 hover:text-sky-700 transition-colors duration-300 leading-snug break-words">
           {title}
         </h3>
       </div>

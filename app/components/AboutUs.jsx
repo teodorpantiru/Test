@@ -17,7 +17,7 @@ export default function AboutUs({ aboutRef }) {
           >
             Despre noi
           </h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
+          <p className="text-gray-700 text-base  sm:text-lg leading-relaxed mb-8 text-center lg:text-left">
             Dacă sunteți în căutarea unei soluții profesioniste pentru
             securitatea locuinței sau a afacerii dumneavoastră, echipa{" "}
             <span className="font-semibold">Cremil T.S.P.I</span> vă stă la

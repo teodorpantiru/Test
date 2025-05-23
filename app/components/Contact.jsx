@@ -9,11 +9,11 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Titlu principal */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-gray-800 leading-tight">
-            Ia legătura cu noi. <br className="sm:hidden" />
-            <span className="text-sky-600">Suntem aici pentru tine.</span>
+          <h2 className="text-4xl text-gray-800 leading-tight scroll-mt-28 font-bold inline-block pb-2">
+            Ia legătura cu noi, <br className="sm:hidden" />
+            <span className="text-sky-600">Suntem aici pentru tine!</span>
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-gray-700 max-w-xl mx-auto ">
             Ai întrebări? Ai nevoie de o ofertă personalizată? Sau pur și simplu
             vrei să discutăm? Suntem la un apel distanță. ☎️
           </p>
