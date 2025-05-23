@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className="relative isolate bg-gradient-to-br from-sky-50 via-white to-gray-100 py-24 px-6 sm:px-10 lg:px-20 overflow-hidden">
+    <section className="relative isolate bg-gradient-to-br from-sky-50 via-white to-gray-100 overflow-hidden px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-32">
       <div className="absolute inset-0 pointer-events-none opacity-10 bg-[url('/grid.svg')] bg-repeat" />
 
       <div className="max-w-7xl mx-auto relative z-10">

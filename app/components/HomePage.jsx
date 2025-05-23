@@ -3,7 +3,7 @@ import homepage from "../../public/assets/homepage.webp";
 
 export default function HomePage() {
   return (
-    <section className="bg-slate-900 px-4 py-14 sm:px-6 sm:py-24">
+    <section className="bg-slate-900 px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-32">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Image Section */}
         <div className="w-full flex justify-center mb-4 lg:mb-0">
@@ -17,7 +17,7 @@ export default function HomePage() {
         </div>
 
         {/* Text Section */}
-        <div className="text-white px-2 py-16 sm:px-4">
+        <div className="text-white px-2  sm:px-4">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left">
             CREMIL T.S.P.I
           </h1>

@@ -4,7 +4,7 @@ import security from "../../public/assets/security.webp";
 
 export default function AboutUs({ aboutRef }) {
   return (
-    <section className="relative isolate bg-gradient-to-br from-sky-100 via-white to-gray-100 py-48 px-6 overflow-hidden">
+    <section className="relative isolate bg-gradient-to-br from-sky-100 via-white to-gray-100 overflow-hidden px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-32">
       {/* Background grid pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-20 bg-[url('/grid.svg')] bg-repeat" />
 
