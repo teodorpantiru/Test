@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900 text-white px-4 py-4 md:px-10 md:py-4 lg:px-4 lg:py-4">
-      <div className="flex flex-col md:flex-row justify-between align-center items-center max-w-7xl mx-auto  gap-10 text-center">
+    <footer className="bg-neutral-900 text-white px-4 py-8 md:px-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-center">
         {/* Logo & Name */}
-        <div>
+        <div className="content-center">
           <h2 className="text-2xl font-bold tracking-wider uppercase mb-2">
             Cremil T.S.P.I
           </h2>
@@ -13,32 +13,72 @@ export default function Footer() {
         </div>
 
         {/* Navigation Links */}
-        {/* <div className="flex flex-col space-y-2">
-                    <h3 className="uppercase text-sm font-semibold text-gray-300 mb-2">Navigare</h3>
-                    <a href="#acasa" className="text-gray-400 hover:text-white transition">Acasă</a>
-                    <a href="#despre" className="text-gray-400 hover:text-white transition">Despre</a>
-                    <a href="#servicii" className="text-gray-400 hover:text-white transition">Servicii</a>
-                    <a href="#contact" className="text-gray-400 hover:text-white transition">Contact</a>
-                </div> */}
+        <nav>
+          <h3 className="uppercase text-sm font-semibold text-gray-300 mb-2">
+            Navigare
+          </h3>
+          <ul className="space-y-2">
+            <li>
+              <a
+                href="#acasa"
+                className="text-gray-400 hover:text-white transition"
+              >
+                Acasă
+              </a>
+            </li>
+            <li>
+              <a
+                href="#despre"
+                className="text-gray-400 hover:text-white transition"
+              >
+                Despre
+              </a>
+            </li>
+            <li>
+              <a
+                href="#servicii"
+                className="text-gray-400 hover:text-white transition"
+              >
+                Servicii
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="text-gray-400 hover:text-white transition"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
 
         {/* Contact Info */}
-        <div className="text-gray-400">
-          <h3 className="uppercase text-sm font-semibold mb-2">Contact</h3>
-          <p className="mb-1">
-            Dobric, Romania
-            <br />
-            Str. Principală nr. 95
-          </p>
-          <p className="mb-1">📞 +40-753 541 498</p>
-          <p className="">
-            ✉️{" "}
-            <a
-              href="mailto:creta_gabriel@hotmail.it"
-              className="hover:text-white"
-            >
-              creta_gabriel@hotmail.it
-            </a>
-          </p>
+        <div>
+          <h3 className="uppercase text-sm font-semibold text-gray-300 mb-2">
+            Contact
+          </h3>
+          <ul className="text-gray-400 space-y-2">
+            <li>
+              <span className="font-semibold">Localitate:</span> Dobric, Romania
+            </li>
+            <li>
+              <span className="font-semibold">Strada:</span> Str. Principală
+              nr.95
+            </li>
+            <li>
+              <span className="font-semibold">Telefon:</span> 📞 +40-753 541 498
+            </li>
+            <li>
+              <span className="font-semibold">Email:</span>{" "}
+              <a
+                href="mailto:creta_gabriel@hotmail.it"
+                className="hover:text-white"
+              >
+                creta_gabriel@hotmail.it
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
