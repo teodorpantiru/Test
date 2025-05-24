@@ -34,7 +34,7 @@ export default function AboutUs({ aboutRef }) {
             alt="Echipamente de securitate"
             width={700}
             height={600}
-            className="rounded-xl shadow-md object-cover w-full h-auto"
+            className="rounded-xl shadow-md object-cover w-full h-auto transition duration-300 hover:scale-105"
           />
         </div>
       </div>

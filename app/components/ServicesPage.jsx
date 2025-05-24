@@ -27,7 +27,7 @@ export default function ServicesPage({
   }, [isSelected]);
 
   return (
-    <section className="bg-gray-100 px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-32">
+    <section className="bg-gray-100 px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-32 ">
       <div className="max-w-7xl mx-auto">
         <h2 className="scroll-mt-28 text-4xl font-bold text-gray-800 mb-6 border-b-2 border-gray-400 inline-block pb-2">
           Serviciile Noastre
@@ -48,7 +48,7 @@ export default function ServicesPage({
 
               {isSelected === service.slug && (
                 <li ref={detailsRef} className="col-span-full scroll-mt-28">
-                  <div className="bg-white shadow-md rounded-xl p-6 mt-4">
+                  <div className="bg-white shadow-xl rounded-xl p-6 mt-4">
                     <ServicesDetails
                       selectedService={service}
                       onCloseService={onCloseService}

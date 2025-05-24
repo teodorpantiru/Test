@@ -22,7 +22,7 @@ export default function Contact() {
         {/* Conținut */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Card de contact */}
-          <div className="bg-white shadow-2xl rounded-3xl p-10 lg:p-12">
+          <div className="bg-white shadow-xl rounded-3xl p-10 lg:p-12 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50">
             <div className="space-y-6 text-gray-700 text-lg">
               <div className="flex items-start gap-4">
                 <FaMapMarkerAlt className="text-sky-600 text-2xl mt-1" />
@@ -64,7 +64,7 @@ export default function Contact() {
           </div>
 
           {/* Hartă */}
-          <div className="rounded-3xl overflow-hidden shadow-xl h-[400px] border-4 border-white">
+          <div className="rounded-3xl overflow-hidden shadow-xl h-[400px] border-4 border-white transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4555.127897461686!2d24.124524205058943!3d47.24601820100914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749c2a50b7156a3%3A0xc6d753a554c59b5d!2sStr.%20Principal%C4%83%2C%20427028%20Dobric!5e0!3m2!1sro!2sro!4v1747482800456!5m2!1sro!2sro"
               width="100%"

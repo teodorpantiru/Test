@@ -45,7 +45,7 @@ export default function PriceSection() {
           {packages.map((pkg) => (
             <div
               key={pkg.name}
-              className="border rounded-2xl shadow-md p-8 transition duration-300 hover:shadow-xl"
+              className="border rounded-2xl shadow-md p-8 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50"
             >
               <h3 className="text-2xl font-semibold text-sky-700 mb-4">
                 {pkg.name}

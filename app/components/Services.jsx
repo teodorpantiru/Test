@@ -11,7 +11,7 @@ export default function Services({
   return (
     <div
       onClick={() => onSelectServices(id)}
-      className={`w-full h-full cursor-pointer bg-white shadow-md rounded-xl p-4  sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 ${
+      className={`w-full h-full cursor-pointer bg-white shadow-xl rounded-xl p-4  sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 ${
         isSelected === id ? "border border-sky-500" : ""
       }`}
     >
