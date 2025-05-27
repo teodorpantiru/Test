@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta
           name="keywords"
-          content="sistem supraveghere, sisteme securitate, instalare, automatizare, securitate, supraveghere video, mentenanta , proiectare,  camere video, detectoare fum, ISU, mentenanță, automatizare porți, Cluj, Florești"
+          content="sisteme securitate Cluj, sistem supraveghere, instalare, automatizare, securitate, supraveghere video, mentenanta , proiectare,  camere video, detectoare fum, ISU, mentenanță, automatizare porți, Cluj, Florești"
         />
         <meta name="robots" content="index, follow" />
         <title>{metadata.title}</title>
