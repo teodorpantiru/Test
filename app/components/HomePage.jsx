@@ -1,5 +1,5 @@
 import Image from "next/image";
-import homepage from "../../public/assets/homepage.webp";
+import homepage from "../../public/assets/sisteme-securitate.webp";
 
 export default function HomePage() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import security from "../../public/assets/security.webp";
+import camereVideo from "../../public/assets/camere-video.webp";
 
 export default function AboutUs({ aboutRef }) {
   return (
@@ -30,7 +30,7 @@ export default function AboutUs({ aboutRef }) {
         {/* Image */}
         <div className="w-full h-full">
           <Image
-            src={security}
+            src={camereVideo}
             alt="Echipamente de securitate"
             width={700}
             height={600}
