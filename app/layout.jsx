@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Google Analytics – înlocuiește ID-ul dacă e diferit */}
+        {/* Google Analytics – înlocuiește ID-ul dacă e diferit
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-4BBWR6PH15"
@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-4BBWR6PH15');
             `,
           }}
-        />
+        /> */}
       </head>
 
       <body
