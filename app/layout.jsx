@@ -36,6 +36,10 @@ export default function RootLayout({ children }) {
           content="sisteme securitate Cluj, sistem supraveghere, instalare, automatizare, securitate, supraveghere video, mentenanta , proiectare,  camere video, detectoare fum, ISU, mentenanță, automatizare porți, Cluj, Florești"
         />
         <meta name="robots" content="index, follow" />
+        <meta
+          name="google-site-verification"
+          content="PsB8jAGwE7q-XF4gQvnrvPtwztM2BTDeGX2Tmr61CyA"
+        />
         <title>{metadata.title}</title>
         <link
           rel="icon"
