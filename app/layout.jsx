@@ -37,7 +37,12 @@ export default function RootLayout({ children }) {
         />
         <meta name="robots" content="index, follow" />
         <title>{metadata.title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/assets/logo.png"
+        />
 
         {/* Structured Data (Schema.org) */}
         <script
