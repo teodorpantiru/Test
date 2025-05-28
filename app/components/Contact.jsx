@@ -51,7 +51,7 @@ export default function Contact() {
                     href="mailto:creta_gabriel@hotmail.it"
                     className="hover:text-sky-700 transition"
                   >
-                    creta_gabriel@hotmail.it
+                    office@cremil-tspi.com
                   </a>
                 </div>
               </div>

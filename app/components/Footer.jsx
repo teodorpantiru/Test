@@ -75,7 +75,7 @@ export default function Footer() {
                 href="mailto:creta_gabriel@hotmail.it"
                 className="hover:text-white"
               >
-                creta_gabriel@hotmail.it
+                office@cremil-tspi.com
               </a>
             </li>
           </ul>
