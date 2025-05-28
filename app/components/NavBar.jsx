@@ -2,7 +2,7 @@
 
 import { useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
-import logo from "../../public/assets/logo.png";
+import logo from "../../public/favicon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaBuildingUser } from "react-icons/fa6";
 import {
