@@ -3,7 +3,7 @@ import homepage from "../../public/assets/sisteme-securitate.webp";
 
 export default function HomePage() {
   return (
-    <section className="bg-slate-900 px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-32">
+    <section className="bg-slate-900 px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-28">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Image Section */}
         <div className="w-full flex justify-center mb-4 lg:mb-0">
@@ -23,20 +23,26 @@ export default function HomePage() {
           </h1>
 
           <p className="text-base sm:text-lg leading-relaxed mb-8 text-center lg:text-left">
-            Dacă sunteți în căutarea unui instalator de sisteme de securitate de
-            încredere,
-            <span className="font-semibold"> Cremil T.S.P.I </span> este
-            alegerea perfectă pentru dumneavoastră. Cu o echipă dedicată și
-            competentă, oferim servicii de instalare și mentenanță la cele mai
-            înalte standarde. Indiferent dacă aveți nevoie de un sistem de
-            monitorizare video, control al accesului sau detecție incendii,
-            puteți conta pe expertiza noastră. Contactați-ne astăzi pentru un
-            mediu sigur și protejat!
+            Căutați un{" "}
+            <strong>
+              instalator de sisteme de securitate în Cluj sau Florești
+            </strong>
+            ?<span className="font-semibold"> Cremil T.S.P.I </span> vă oferă
+            soluții complete pentru locuințe și afaceri, adaptate nevoilor
+            dumneavoastră. Oferim servicii profesionale de{" "}
+            <strong>instalare, mentenanță și configurare</strong> pentru
+            <strong>
+              {" "}
+              camere de supraveghere video, sisteme de control acces și detecție
+              incendiu
+            </strong>
+            . Ne diferențiem prin promptitudine, seriozitate și rezultate
+            durabile.
           </p>
 
           <div className="flex justify-center lg:justify-start">
             <div className="bg-white text-slate-900 font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-              Citește mai mult
+              -- Citește mai mult --
             </div>
           </div>
         </div>

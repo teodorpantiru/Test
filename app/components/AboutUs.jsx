@@ -17,13 +17,16 @@ export default function AboutUs({ aboutRef }) {
           >
             Despre noi
           </h2>
-          <p className="text-gray-700 text-base  sm:text-lg leading-relaxed mb-8 lg:text-left">
-            Dacă sunteți în căutarea unei soluții profesioniste pentru
-            securitatea locuinței sau a afacerii dumneavoastră, echipa{" "}
-            <span className="font-semibold">Cremil T.S.P.I</span> vă stă la
-            dispoziție. Cu o vastă experiență în domeniul securității, vă
-            garantăm servicii de cea mai înaltă calitate, personalizate nevoilor
-            dumneavoastră specifice.
+          <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-8 lg:text-left">
+            Dacă aveți nevoie de o soluție completă pentru siguranța locuinței
+            sau afacerii din <strong> Cluj sau Florești</strong>, echipa{" "}
+            <span className="font-semibold">Cremil T.S.P.I</span> vă oferă
+            servicii profesionale de
+            <strong> instalare sisteme de securitate</strong>,{" "}
+            <strong>camere video</strong>,<strong> detecție incendiu</strong> și{" "}
+            <strong>automatizări</strong>. Cu o vastă experiență în domeniu, vă
+            garantăm lucrări personalizate, realizate la cele mai înalte
+            standarde.
           </p>
         </div>
 

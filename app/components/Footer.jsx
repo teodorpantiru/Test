@@ -60,11 +60,11 @@ export default function Footer() {
           </h3>
           <ul className="text-gray-400 space-y-2">
             <li>
-              <span className="font-semibold">Localitate:</span> Dobric, Romania
+              <span className="font-semibold">Localitate:</span> Florești, Cluj,
+              Romania,
             </li>
             <li>
-              <span className="font-semibold">Strada:</span> Str. Principală
-              nr.95
+              <span className="font-semibold">Strada:</span> Eroilor, nr. 380,
             </li>
             <li>
               <span className="font-semibold">Telefon:</span> 📞 +40-753 541 498

@@ -28,7 +28,7 @@ export default function Contact() {
                 <FaMapMarkerAlt className="text-sky-600 text-2xl mt-1" />
                 <div>
                   <p className="font-bold">Adresă:</p>
-                  <p>Str. Principală 95, Dobric, România</p>
+                  <p>Str. Eroilor 380, Floresti, Cluj</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -66,7 +66,7 @@ export default function Contact() {
           {/* Hartă */}
           <div className="rounded-3xl overflow-hidden shadow-xl h-[400px] border-4 border-white transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4555.127897461686!2d24.124524205058943!3d47.24601820100914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749c2a50b7156a3%3A0xc6d753a554c59b5d!2sStr.%20Principal%C4%83%2C%20427028%20Dobric!5e0!3m2!1sro!2sro!4v1747482800456!5m2!1sro!2sro"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2734.5485424299145!2d23.480672376776806!3d46.73436534780091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749102f392a42d5%3A0x4b2a8e8ffe34d8d!2sStr.%20Eroilor%20380%2C%20Flore%C8%99ti%20407280!5e0!3m2!1sro!2sro!4v1748456657535!5m2!1sro!2sro"
               width="100%"
               height="100%"
               className="w-full h-full border-0"
