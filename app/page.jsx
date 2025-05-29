@@ -31,7 +31,7 @@ export default function Home() {
 
     const ref = refs[section];
     if (ref?.current) {
-      const yOffset = -40; // adjust based on navbar height
+      const yOffset = -150; // adjust based on navbar height
       const y =
         ref.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
 

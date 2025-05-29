@@ -1,9 +1,19 @@
+import Image from "next/image";
+import logo from "../../public/assets/logo.png";
+
 export default function Footer() {
   return (
     <footer className="bg-neutral-900 text-white px-4 py-8 md:px-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-center">
         {/* Logo & Name */}
-        <div className="content-center">
+        <div className="content-center justify-center">
+          <Image
+            className="mb-4"
+            src={logo}
+            width={70}
+            height={70}
+            alt="Cremil logo"
+          />
           <h2 className="text-2xl font-bold tracking-wider uppercase mb-2">
             Cremil T.S.P.I
           </h2>
