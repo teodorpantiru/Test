@@ -19,9 +19,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title:
-    "Cremil T.S.P.I - Sisteme de Securitate Cluj, Automatizări, Instalări, Mentenanță, Incendiu și Supraveghere",
+    "Sisteme Securitate Cluj - Supraveghere Video, Automatizări, Incendiu | Cremil T.S.P.I",
+
   description:
-    "Cremil T.S.P.I oferă soluții complete de securitate: sisteme de supraveghere video, control acces, detecție incendiu, efracție și case inteligente. Servicii profesionale de proiectare, instalare și mentenanță în Cluj, Floresti",
+    "Instalăm sisteme de supraveghere video exterior și interior pentru locuințe, apartamente și firme în Cluj și Florești. Oferim montaj detectoare de fum avizate ISU, alarme efracție, automatizări porți auto și pietonale, bariere acces auto pentru parcări private, sisteme smart home și control acces cu videointerfon. Soluții profesionale, autorizate, cu intervenție rapidă și mentenanță inclusă.",
 };
 
 export default function RootLayout({ children }) {
@@ -33,7 +34,13 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta
           name="keywords"
-          content="sisteme securitate Cluj, Floresti, sistem supraveghere Cluj, Floresti, instalare, automatizare, securitate, supraveghere video, mentenanta , proiectare, camere video, detectoare fum, ISU, mentenanță, automatizare porți, Cluj, Florești"
+          content="
+          sistem supraveghere video Cluj, 
+          instalare bariere acces auto Cluj,
+          instalare detectoare fum Cluj, 
+          sisteme securitate casa Cluj, 
+          automatizare porti Cluj, 
+          sisteme incendiu ISU Cluj Napoca,"
         />
         <meta name="robots" content="index, follow" />
         <meta
