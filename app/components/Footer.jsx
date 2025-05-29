@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-neutral-900 text-white px-4 py-8 md:px-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-center">
         {/* Logo & Name */}
-        <div className="content-center justify-center">
+        <div className="flex flex-col items-center">
           <Image
             className="mb-4"
             src={logo}

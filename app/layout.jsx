@@ -41,9 +41,14 @@ export default function RootLayout({ children }) {
           content="PsB8jAGwE7q-XF4gQvnrvPtwztM2BTDeGX2Tmr61CyA"
         />
         <title>{metadata.title}</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/assets/logo.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/assets/logo.png"
+        />
+        <link rel="apple-touch-icon" href="/assets/logo.png" />
 
         {/* Structured Data (Schema.org) */}
         <script
