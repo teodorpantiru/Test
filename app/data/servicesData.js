@@ -20,7 +20,7 @@ const servicesData = [
         content: [
             {
                 type: "paragraph",
-                text: "🌬️ Ești în căutarea unei firme specializate în instalare aer condiționat în Cluj sau Florești? Cremil T.S.P.I. îți oferă servicii profesionale complete – de la consultanță tehnică și selecția echipamentului potrivit, până la montaj și întreținere post-instalare."
+                text: "🌬️ Ești în căutarea unei firme specializate în instalare aer condiționat în Florești sau Cluj? Cremil T.S.P.I. îți oferă servicii profesionale complete – de la consultanță tehnică și selecția echipamentului potrivit, până la montaj și întreținere post-instalare."
             },
             {
                 type: "paragraph",
@@ -46,7 +46,7 @@ const servicesData = [
             },
             {
                 type: "paragraph",
-                text: "🛠️ Dacă ai căutat o firmă de aer condiționat în Cluj care oferă și servicii de întreținere, ai ajuns la soluția potrivită. Avem echipe mobile care acoperă zona metropolitană Cluj-Florești și intervenim prompt în orice locație."
+                text: "🛠️ Dacă ai căutat o firmă care ofera servicii de instalare aer condiționat în Cluj si care oferă și servicii de întreținere, ai ajuns la soluția potrivită. Avem echipe mobile care acoperă zona metropolitană Cluj-Florești și intervenim prompt în orice locație."
             },
             {
                 type: "paragraph",
@@ -58,12 +58,7 @@ const servicesData = [
                 href: "/contact"
             }
         ]
-    }
-
-    ,
-
-
-
+    },
     {
         title: "Proiectare sisteme de securitate",
         slug: "proiectare-sisteme-de-securitate",
