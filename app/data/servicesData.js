@@ -9,9 +9,61 @@ import sistemincendiu from "../../public/assets/Cards/sistem-incendiu.webp";
 import videointerfoane from "../../public/assets/Cards/video-interfoane.webp";
 import casainteligenta from "../../public/assets/Cards/casa-inteligenta.webp";
 import sistemeretea from "../../public/assets/Cards/sisteme-retea.webp";
+import aerconditionat from "../../public/assets/Cards/aparat-aer-conditionat.webp";
 
 
 const servicesData = [
+    {
+        title: "Instalare Aer Condiționat în Cluj și Florești – Soluții Profesionale",
+        slug: "instalare-aer-conditionat-cluj-floresti",
+        SourceImage: aerconditionat,
+        content: [
+            {
+                type: "paragraph",
+                text: "🌬️ Ești în căutarea unei firme specializate în instalare aer condiționat în Cluj sau Florești? Cremil T.S.P.I. îți oferă servicii profesionale complete – de la consultanță tehnică și selecția echipamentului potrivit, până la montaj și întreținere post-instalare."
+            },
+            {
+                type: "paragraph",
+                text: "✅ Oferim soluții personalizate pentru orice tip de spațiu: apartamente, case, birouri sau sedii comerciale. Echipa noastră asigură instalarea eficientă a sistemelor de aer condiționat în Cluj și Florești, în conformitate cu normele de siguranță și eficiență energetică."
+            },
+            {
+                type: "paragraph",
+                text: "🔧 Fie că ai nevoie de montaj aer condiționat în Florești sau de instalare AC într-un imobil din Cluj-Napoca, intervenim rapid, cu echipamente moderne și personal instruit. Lucrările noastre respectă cele mai înalte standarde de calitate."
+            },
+            {
+                type: "paragraph",
+                text: "📋 Ce includ serviciile noastre de montaj aer condiționat:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Analiza necesarului termic și alegerea echipamentului potrivit (split, multisplit, inverter etc.)",
+                    "Montaj complet – inclusiv trasee frigorifice, drenaj, conexiune electrică",
+                    "Testare și punere în funcțiune, cu garanție pentru lucrare și aparat",
+                    "Instruirea clientului privind utilizarea corectă a sistemului",
+                    "Servicii de mentenanță și igienizare filtre la intervale regulate"
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "🛠️ Dacă ai căutat o firmă de aer condiționat în Cluj care oferă și servicii de întreținere, ai ajuns la soluția potrivită. Avem echipe mobile care acoperă zona metropolitană Cluj-Florești și intervenim prompt în orice locație."
+            },
+            {
+                type: "paragraph",
+                text: "💼 Indiferent că este vorba despre instalare AC în Cluj pentru locuințe sau montaj aer condiționat în Florești pentru spații comerciale, îți garantăm transparență, prețuri corecte și un rezultat impecabil."
+            },
+            {
+                type: "paragraph",
+                text: "📞 Contactează-ne acum pentru o ofertă personalizată și programare rapidă. Cremil T.S.P.I – partenerul tău de încredere pentru aer condiționat în Cluj și Florești.",
+                href: "/contact"
+            }
+        ]
+    }
+
+    ,
+
+
+
     {
         title: "Proiectare sisteme de securitate",
         slug: "proiectare-sisteme-de-securitate",
@@ -125,88 +177,53 @@ const servicesData = [
     ,
 
     {
-        title: "Instalare și mentenanță bariere control acces",
-        slug: "instalare-mentenanta-bariere-control-acces",
+        title: "Bariere și Automatizări pentru Porți",
+        slug: "sisteme-acces-bariere-automatizari-porti",
         SourceImage: bariere,
         content: [
             {
                 type: "paragraph",
-                text: "📌 Baza legală: 📌"
+                text: "🚧 Siguranță, confort și control total – toate într-un singur loc! Oferim servicii profesionale de montaj și mentenanță pentru bariere cu control acces și automatizări pentru porți, dedicate companiilor care își doresc un sistem eficient de securitate și acces."
             },
             {
                 type: "paragraph",
-                text: "✅ Montarea barierelor cu control de acces – cea mai sigură soluție oferită de profesioniști în domeniu."
+                text: "📌 Baza legală: Toate instalațiile noastre sunt realizate conform legislației în vigoare privind securitatea și controlul accesului în incinte private și comerciale. Respectăm normele tehnice și oferim documentație completă la cerere."
             },
             {
                 type: "paragraph",
-                text: "Accesul în spațiul privat al unei companii trebuie întotdeauna să fie restricționat, pentru a evita prezența persoanelor străine în aceste zone. Este dificil pentru oricine să verifice manual fiecare persoană sau autovehicul care intră în incinta clădirii. Din acest motiv, printre sistemele de control al accesului disponibile pe piață se numără și barierele de control al accesului, care pot fi instalate de către o echipă de specialiști."
+                text: "🔒 Barierele cu control de acces sunt ideale pentru parcări, sedii de firmă și spații private, permițând verificarea fiecărui vehicul printr-un sistem automat sau autorizat manual."
             },
             {
                 type: "paragraph",
-                text: "Barierele cu control de acces sunt ideale pentru domeniul auto, deoarece permit verificarea fiecărui vehicul care intră în garajul sau în spațiul privat al companiei, de către personal autorizat. Astfel, accesul în spațiul privat al unei companii este eficient securizat."
+                text: "⚙️ Automatizările pentru porți (batante sau culisante) adaugă un plus de confort și eficiență. Acționarea se face prin telecomandă, cod, cartelă RFID sau senzori de mișcare – în funcție de nevoile locației."
             },
             {
                 type: "paragraph",
-                text: "De ce să alegeți Cremil T.S.P.I pentru montajul barierelor cu control de acces?"
+                text: "🔍 De ce să alegi Cremil T.S.P.I:"
             },
             {
                 type: "list",
                 items: [
-                    "Profesionalismul echipei noastre de teren, care analizează situația și estimează o perioadă fezabilă în care montajul barierelor de acces poate fi finalizat până la ultimul detaliu.",
-                    "Tarifele accesibile care ne diferențiază de concurență și pe care le oferim tuturor clienților noștri pentru a beneficia de cea mai bună experiență.",
-                    "Servicii bazate pe expertiza noastră de peste 15 ani în domeniul sistemelor de securitate, atât în instalare, reparații, cât și în mentenanță.",
-                    "Asigurarea unor servicii de calitate, inclusiv în cazul montajului barierelor de control de acces. Acestea sunt printre principalele tipuri de instalări ale sistemelor de control al accesului pe care firma noastră este pregătită să le furnizeze tuturor celor ce au nevoie de o echipă serioasă, responsabilă și cu experiență vastă în acest domeniu complex."
+                    "👷 Echipă de profesioniști cu peste 15 ani de experiență în domeniul sistemelor de securitate.",
+                    "📐 Consultanță și evaluare tehnică la fața locului pentru soluții personalizate.",
+                    "🔧 Montaj complet pentru bariere de acces și automatizări de porți – inclusiv integrare cu sisteme de control al accesului.",
+                    "🛡️ Siguranță sporită prin sisteme autonome care restricționează accesul persoanelor neautorizate.",
+                    "🚗 Comoditate prin deschiderea automată a porților fără întreruperi în fluxul de trafic.",
+                    "💸 Prețuri transparente și accesibile, adaptate bugetului fiecărei companii.",
+                    "🔁 Mentenanță periodică și intervenții rapide pentru o funcționare optimă a sistemelor instalate."
                 ]
             },
             {
                 type: "paragraph",
-                text: "📞 Contactați-ne acum pentru oferte personalizate și informații suplimentare.",
+                text: "💡 Indiferent dacă ai nevoie de o barieră automată pentru control trafic sau de o poartă acționată electric, noi ne ocupăm de tot: proiectare, instalare, testare și întreținere."
+            },
+            {
+                type: "paragraph",
+                text: "📞 Contactează-ne acum pentru o ofertă personalizată și consultanță gratuită!",
                 href: "/contact"
             }
         ]
     },
-
-    {
-        title: "Instalare și mentenanță automatizări porți",
-        slug: "instalare-mentenanta-automatizari-porti",
-        SourceImage: porti,
-        content: [
-            {
-                type: "paragraph",
-                text: "📌 Baza legală: 📌"
-            },
-            {
-                type: "paragraph",
-                text: "✅ Montajul profesionist al automatizărilor pentru porți - confort și siguranță."
-            },
-            {
-                type: "paragraph",
-                text: "Pentru multe companii, siguranța este un deziderat major, iar confortul este următorul pe listă. Angajații unei companii trebuie să se simtă în siguranță și să aibă un mediu relaxant pentru a fi productivi în timpul orelor de program. Aceste obiective, deși esențiale, pot fi dificil de atins, dar serviciile de calitate nu sunt întotdeauna costisitoare."
-            },
-            {
-                type: "paragraph",
-                text: "Cremil T.S.P.I asigură instalarea sistemelor de acces pentru companii care doresc atât siguranță, prin monitorizarea persoanelor care intră în contact cu teritoriul privat al firmei, cât și confort, prin automatizarea porților. Automatizările pentru porți oferite de noi sunt bazate pe componente esențiale montate pentru a funcționa ca un sistem autonom, acționat de un cod sau de senzori care detectează mișcare pentru a acționa mecanismul porților. Fie că alegeți porți batante sau culisante, Cremil T.S.P.I este alături de compania dvs. pentru a asigura montajul automatizărilor potrivite pentru zona în care le amplasați."
-            },
-            {
-                type: "paragraph",
-                text: "De ce să apelați la montajul automatizărilor pentru porți oferite de noi?"
-            },
-            {
-                type: "list",
-                items: [
-                    "Siguranța este asigurată prin automatizările pentru porți, contribuind la securitatea procesului, blocând accesul celor care nu pot prezenta un act de identificare sau o cartela de acces.",
-                    "Comoditatea este garantată de montajul automatizărilor pentru porți, oferind o modalitate simplă de a deschide căile de acces, fără a bloca tranzitul grupurilor mari de oameni sau a mașinilor care pot intra în spațiu.",
-                    "Tarifele sunt concepute pentru a permite companiilor să beneficieze de montajul automatizărilor pentru porți la cele mai înalte standarde și la cele mai avantajoase prețuri.",
-                    "Montajul automatizărilor pentru porți de la Cremil T.S.P.I face parte din oferta noastră de instalare a sistemelor de securitate, destinată tuturor companiilor care doresc să ofere siguranță și confort angajaților lor."
-                ]
-            },
-            {
-                type: "paragraph",
-                text: "📞 Contactați-ne acum pentru oferte personalizate și informații suplimentare.",
-                href: "/contact"
-            }
-        ]
-    }
     ,
     {
         title: "Instalare și mentenanță sistem efracție",

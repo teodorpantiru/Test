@@ -19,10 +19,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title:
-    "Sisteme Securitate Cluj - Supraveghere Video, Automatizări, Incendiu | Cremil T.S.P.I",
+    "Instalare Aer Condiționat Cluj & Florești | Sisteme de Securitate Cremil T.S.P.I",
 
   description:
-    "Instalăm sisteme de supraveghere video exterior și interior pentru locuințe, apartamente și firme în Cluj și Florești. Oferim montaj detectoare de fum avizate ISU, alarme efracție, automatizări porți auto și pietonale, bariere acces auto pentru parcări private, sisteme smart home și control acces cu videointerfon. Soluții profesionale, autorizate, cu intervenție rapidă și mentenanță inclusă.",
+    "Instalare aer condiționat Cluj și Florești rapid și profesionist. Oferim și montaj sisteme de supraveghere video, detectoare fum ISU, alarme, automatizări porți și bariere auto. Soluții complete pentru siguranță și confort.",
 };
 
 export default function RootLayout({ children }) {
@@ -35,13 +35,18 @@ export default function RootLayout({ children }) {
         <meta
           name="keywords"
           content="
-          sistem supraveghere video Cluj, 
-          instalare bariere acces auto Cluj,
-          instalare detectoare fum Cluj, 
-          sisteme securitate casa Cluj, 
-          automatizare porti Cluj, 
-          sisteme incendiu ISU Cluj Napoca,"
+  instalare aer condiționat Cluj,
+  montaj aer condiționat Florești,
+  aer condiționat Cluj,
+  firmă aer condiționat Cluj,
+  instalare AC Cluj Florești,
+  sisteme securitate Cluj,
+  detectoare fum ISU,
+  supraveghere video exterior Cluj,
+  automatizare porți auto Cluj
+"
         />
+
         <meta name="robots" content="index, follow" />
         <meta
           name="google-site-verification"
@@ -63,10 +68,11 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["Electrician", "SecurityService"],
+              "@type": "Organization",
               name: "Cremil T.S.P.I",
               description: metadata.description,
               url: "https://www.cremil-tspi.com",
+              logo: "https://www.cremil-tspi.com/assets/logo-big.png",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Cluj-Napoca",
