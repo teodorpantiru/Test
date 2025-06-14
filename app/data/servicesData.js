@@ -1,3 +1,177 @@
+// // src/data/servicesData.js
+// import aerconditionat from "../../public/assets/Cards/aparat-aer-conditionat.webp";
+// import supraveghere from "../../public/assets/Cards/supraveghere.webp";
+
+// const servicesData = [
+//   {
+//     id: "aer-conditionat",
+//     title: "Instalare Aer Condiționat",
+//     SourceImage: aerconditionat,
+//     content: [
+//       {
+//         type: "paragraph",
+//         text: "Oferim servicii complete de instalare aer condiționat în Cluj și Florești. Rapid, eficient și cu garanție."
+//       },
+//       {
+//         type: "list",
+//         items: [
+//           "Consultanță gratuită",
+//           "Montaj profesional",
+//           "Garanție inclusă"
+//         ]
+//       }
+//     ]
+//   },
+//   {
+//     id: "servicii-proiectare",
+//     title: "Servicii Proiectare Sisteme",
+//     content: [
+//             {
+//                 type: "paragraph",
+//                 text: "🌬️ Ești în căutarea unei firme specializate în instalare aer condiționat în Florești sau Cluj? Cremil T.S.P.I. îți oferă servicii profesionale complete – de la consultanță tehnică și selecția echipamentului potrivit, până la montaj și întreținere post-instalare."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "✅ Oferim soluții personalizate pentru orice tip de spațiu: apartamente, case, birouri sau sedii comerciale. Echipa noastră asigură instalarea eficientă a sistemelor de aer condiționat în Cluj și Florești, în conformitate cu normele de siguranță și eficiență energetică."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "🔧 Fie că ai nevoie de montaj aer condiționat în Florești sau de instalare AC într-un imobil din Cluj-Napoca, intervenim rapid, cu echipamente moderne și personal instruit. Lucrările noastre respectă cele mai înalte standarde de calitate."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "📋 Ce includ serviciile noastre de montaj aer condiționat:"
+//             },
+//             {
+//                 type: "list",
+//                 items: [
+//                     "Analiza necesarului termic și alegerea echipamentului potrivit (split, multisplit, inverter etc.)",
+//                     "Montaj complet – inclusiv trasee frigorifice, drenaj, conexiune electrică",
+//                     "Testare și punere în funcțiune, cu garanție pentru lucrare și aparat",
+//                     "Instruirea clientului privind utilizarea corectă a sistemului",
+//                     "Servicii de mentenanță și igienizare filtre la intervale regulate"
+//                 ]
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "🛠️ Dacă ai căutat o firmă care ofera servicii de instalare aer condiționat în Cluj si care oferă și servicii de întreținere, ai ajuns la soluția potrivită. Avem echipe mobile care acoperă zona metropolitană Cluj-Florești și intervenim prompt în orice locație."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "💼 Indiferent că este vorba despre instalare AC în Cluj pentru locuințe sau montaj aer condiționat în Florești pentru spații comerciale, îți garantăm transparență, prețuri corecte și un rezultat impecabil."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "📞 Contactează-ne acum pentru o ofertă personalizată și programare rapidă. Cremil T.S.P.I – partenerul tău de încredere pentru aer condiționat în Cluj și Florești.",
+//                 href: "/contact"
+//             }
+//         ]
+//   },
+//   {
+//     id: "servicii-proiectare",
+//     title: "Servicii Proiectare Sisteme",
+//     content: [
+//             {
+//                 type: "paragraph",
+//                 text: "🌬️ Ești în căutarea unei firme specializate în instalare aer condiționat în Florești sau Cluj? Cremil T.S.P.I. îți oferă servicii profesionale complete – de la consultanță tehnică și selecția echipamentului potrivit, până la montaj și întreținere post-instalare."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "✅ Oferim soluții personalizate pentru orice tip de spațiu: apartamente, case, birouri sau sedii comerciale. Echipa noastră asigură instalarea eficientă a sistemelor de aer condiționat în Cluj și Florești, în conformitate cu normele de siguranță și eficiență energetică."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "🔧 Fie că ai nevoie de montaj aer condiționat în Florești sau de instalare AC într-un imobil din Cluj-Napoca, intervenim rapid, cu echipamente moderne și personal instruit. Lucrările noastre respectă cele mai înalte standarde de calitate."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "📋 Ce includ serviciile noastre de montaj aer condiționat:"
+//             },
+//             {
+//                 type: "list",
+//                 items: [
+//                     "Analiza necesarului termic și alegerea echipamentului potrivit (split, multisplit, inverter etc.)",
+//                     "Montaj complet – inclusiv trasee frigorifice, drenaj, conexiune electrică",
+//                     "Testare și punere în funcțiune, cu garanție pentru lucrare și aparat",
+//                     "Instruirea clientului privind utilizarea corectă a sistemului",
+//                     "Servicii de mentenanță și igienizare filtre la intervale regulate"
+//                 ]
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "🛠️ Dacă ai căutat o firmă care ofera servicii de instalare aer condiționat în Cluj si care oferă și servicii de întreținere, ai ajuns la soluția potrivită. Avem echipe mobile care acoperă zona metropolitană Cluj-Florești și intervenim prompt în orice locație."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "💼 Indiferent că este vorba despre instalare AC în Cluj pentru locuințe sau montaj aer condiționat în Florești pentru spații comerciale, îți garantăm transparență, prețuri corecte și un rezultat impecabil."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "📞 Contactează-ne acum pentru o ofertă personalizată și programare rapidă. Cremil T.S.P.I – partenerul tău de încredere pentru aer condiționat în Cluj și Florești.",
+//                 href: "/contact"
+//             }
+//         ]
+//   },
+
+//   {
+//         title: "Instalare și mentenanță sistem supraveghere video",
+//         slug: "instalare-mentenanta-sistem-supraveghere-video",
+//         SourceImage: supraveghere,
+//         content: [
+//             {
+//                 type: "paragraph",
+//                 text: "📌 Baza legală: 📌"
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "✅ Supravegherea unei clădiri de birouri a fost întotdeauna și va rămâne o modalitate ideală pentru orice companie de a monitoriza activitățile angajaților și de a detecta orice activitate cu potențial periculos. Camerele de supraveghere au un rol dublu, de monitorizare și de protecție, iar aceste două aspecte sunt asigurate doar printr-o instalare eficientă a camerelor de supraveghere, fie în interiorul, fie în exteriorul unei clădiri."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "Instalarea camerelor de supraveghere este o operațiune complexă, deoarece de obicei implică instalarea unui sistem complet de monitorizare, care nu numai că înregistrează imagini, ci le și stochează pe un dispozitiv special. Montarea camerelor de supraveghere este, prin urmare, o operațiune care trebuie realizată de o echipă profesionistă, care are o experiență în acest domeniu și este pregătită să se adapteze la orice cerință a partenerilor noștri."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "Detaliile pe care potențialii noștri parteneri doresc să le stabilească pot fi discutate pentru a stabili o direcție generală, prin care să ajungem la un consens asupra tarifelor, perioadei estimate de lucru și dimensiunilor întregii operațiuni de instalare a camerelor de supraveghere. Toate acestea pot fi discutate cu echipa profesionistă, urmând ca cei cu expertiză pe teren să se prezinte și să ofere serviciile de montaj a camerelor de supraveghere dorite, în cele mai bune condiții posibile."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "De ce să alegeți montajul camerelor de supraveghere efectuat de Cremil T.S.P.I?"
+//             },
+//             {
+//                 type: "list",
+//                 items: [
+//                     "Montarea camerelor de supraveghere de către o echipă expertă în acest tip de operațiuni, pentru a asigura funcționalitatea optimă a întregului sistem de monitorizare.",
+//                     "Instalarea rapidă a camerelor de supraveghere, pentru a accelera procesul până când sistemul de supraveghere poate fi utilizat la potențialul său maxim.",
+//                     "Un plan tarifar avantajos, cu camere care provin de la distribuitori autorizați și bine-cunoscuți pe piața internațională.",
+//                     "Adaptabilitatea la orice cerință inclusă în serviciul de montaj al camerelor de supraveghere, pentru a asigura un parteneriat de calitate.",
+//                     "Asigurarea mentenanței tuturor sistemelor de monitorizare precum și a tuturor reparațiilor necesare după instalarea camerelor de supraveghere video."
+//                 ]
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "Fiecare dintre aceste caracteristici esențiale în orice parteneriat între noi și clienții noștri este o responsabilitate asumată de echipa noastră de experți, pregătită să facă față oricărei cerințe, indiferent cât de complexă ar fi aceasta."
+//             },
+//             {
+//                 type: "paragraph",
+//                 text: "📞 Contactați-ne acum pentru oferte personalizate și informații suplimentare.",
+//                 href: "/contact"
+//             }
+//         ]
+//     }
+  
+// ];
+
+// export default servicesData;
+
+
+
+
+
+
+
+
+
 
 
 import sistemesecuritate from "../../public/assets/Cards/sisteme-securitate.webp";
@@ -11,122 +185,131 @@ import casainteligenta from "../../public/assets/Cards/casa-inteligenta.webp";
 import sistemeretea from "../../public/assets/Cards/sisteme-retea.webp";
 import aerconditionat from "../../public/assets/Cards/aparat-aer-conditionat.webp";
 
-
 const servicesData = [
-    {
-        title: "Instalare Aer Condiționat în Cluj și Florești – Soluții Profesionale",
-        slug: "instalare-aer-conditionat-cluj-floresti",
-        SourceImage: aerconditionat,
-        content: [
-            {
-                type: "paragraph",
-                text: "🌬️ Ești în căutarea unei firme specializate în instalare aer condiționat în Florești sau Cluj? Cremil T.S.P.I. îți oferă servicii profesionale complete – de la consultanță tehnică și selecția echipamentului potrivit, până la montaj și întreținere post-instalare."
-            },
-            {
-                type: "paragraph",
-                text: "✅ Oferim soluții personalizate pentru orice tip de spațiu: apartamente, case, birouri sau sedii comerciale. Echipa noastră asigură instalarea eficientă a sistemelor de aer condiționat în Cluj și Florești, în conformitate cu normele de siguranță și eficiență energetică."
-            },
-            {
-                type: "paragraph",
-                text: "🔧 Fie că ai nevoie de montaj aer condiționat în Florești sau de instalare AC într-un imobil din Cluj-Napoca, intervenim rapid, cu echipamente moderne și personal instruit. Lucrările noastre respectă cele mai înalte standarde de calitate."
-            },
-            {
-                type: "paragraph",
-                text: "📋 Ce includ serviciile noastre de montaj aer condiționat:"
-            },
-            {
-                type: "list",
-                items: [
-                    "Analiza necesarului termic și alegerea echipamentului potrivit (split, multisplit, inverter etc.)",
-                    "Montaj complet – inclusiv trasee frigorifice, drenaj, conexiune electrică",
-                    "Testare și punere în funcțiune, cu garanție pentru lucrare și aparat",
-                    "Instruirea clientului privind utilizarea corectă a sistemului",
-                    "Servicii de mentenanță și igienizare filtre la intervale regulate"
-                ]
-            },
-            {
-                type: "paragraph",
-                text: "🛠️ Dacă ai căutat o firmă care ofera servicii de instalare aer condiționat în Cluj si care oferă și servicii de întreținere, ai ajuns la soluția potrivită. Avem echipe mobile care acoperă zona metropolitană Cluj-Florești și intervenim prompt în orice locație."
-            },
-            {
-                type: "paragraph",
-                text: "💼 Indiferent că este vorba despre instalare AC în Cluj pentru locuințe sau montaj aer condiționat în Florești pentru spații comerciale, îți garantăm transparență, prețuri corecte și un rezultat impecabil."
-            },
-            {
-                type: "paragraph",
-                text: "📞 Contactează-ne acum pentru o ofertă personalizată și programare rapidă. Cremil T.S.P.I – partenerul tău de încredere pentru aer condiționat în Cluj și Florești.",
-                href: "/contact"
-            }
+  {
+    id: "instalare-aer-conditionat",
+    title: "Instalare Aer Condiționat",
+    slug: "instalare-aer-conditionat",
+    SourceImage: aerconditionat,
+     description: [
+      " Ești în căutarea unei firme specializate în instalare aer condiționat? Cremil T.S.P.I. îți oferă servicii profesionale complete – de la consultanță tehnică și selecția echipamentului potrivit, până la montaj și întreținere post-instalare."
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "🌬️ Ești în căutarea unei firme specializate în instalare aer condiționat? Cremil T.S.P.I. îți oferă servicii profesionale complete – de la consultanță tehnică și selecția echipamentului potrivit, până la montaj și întreținere post-instalare."
+      },
+      {
+        type: "paragraph",
+        text: "✅ Oferim soluții personalizate pentru orice tip de spațiu: apartamente, case, birouri sau sedii comerciale. Echipa noastră asigură instalarea eficientă a sistemelor de aer condiționat în Cluj și Florești, în conformitate cu normele de siguranță și eficiență energetică."
+      },
+      {
+        type: "paragraph",
+        text: "🔧 Fie că ai nevoie de montaj aer condiționat în Florești sau de instalare AC într-un imobil din Cluj-Napoca, intervenim rapid, cu echipamente moderne și personal instruit. Lucrările noastre respectă cele mai înalte standarde de calitate."
+      },
+      {
+        type: "paragraph",
+        text: "📋 Ce includ serviciile noastre de montaj aer condiționat:"
+      },
+      {
+        type: "list",
+        items: [
+          "Analiza necesarului termic și alegerea echipamentului potrivit (split, multisplit, inverter etc.)",
+          "Montaj complet – inclusiv trasee frigorifice, drenaj, conexiune electrică",
+          "Testare și punere în funcțiune, cu garanție pentru lucrare și aparat",
+          "Instruirea clientului privind utilizarea corectă a sistemului",
+          "Servicii de mentenanță și igienizare filtre la intervale regulate"
         ]
-    },
-    {
-        title: "Proiectare sisteme de securitate",
-        slug: "proiectare-sisteme-de-securitate",
-        SourceImage: sistemesecuritate,
-        content: [
-            {
-                type: "paragraph",
-                text: "📌 Baza legală: 📌"
-            },
+      },
+      {
+        type: "paragraph",
+        text: "🛠️ Dacă ai căutat o firmă care ofera servicii de instalare aer condiționat în Cluj si care oferă și servicii de întreținere, ai ajuns la soluția potrivită. Avem echipe mobile care acoperă zona metropolitană Cluj-Florești și intervenim prompt în orice locație."
+      },
+      {
+        type: "paragraph",
+        text: "💼 Indiferent că este vorba despre instalare AC în Cluj pentru locuințe sau montaj aer condiționat în Florești pentru spații comerciale, îți garantăm transparență, prețuri corecte și un rezultat impecabil."
+      },
+      {
+        type: "paragraph",
+        text: "📞 Contactează-ne acum pentru o ofertă personalizată și programare rapidă. Cremil T.S.P.I – partenerul tău de încredere pentru aer condiționat în Cluj și Florești.",
+        href: "/contact"
+      }
+    ]
+  },
+  {
+    id: "proiectare-sisteme-securitate",
+    title: "Proiectare sisteme de securitate",
+    slug: "proiectare-sisteme-de-securitate",
+    SourceImage: sistemesecuritate,
+    description: [
+      "Proiectarea unui sistem de securitate presupune stabilirea unei configurații complexe de echipamente: centrale de alarmare, echipament de detectare și semnalizare optoacustică, camere video, sisteme de control al accesului și alimentarea acestora cu energie. Această configurare este stabilită prin intermediul unui Raport de Evaluare și Tratare a Riscurilor la Securitatea Fizică, un document elaborat de un membru al registrului evaluatorilor la securitatea fizică. Acest raport reprezintă baza adoptării măsurilor de securitate pentru obiective, bunuri și valori, conform legii, și este transpus în planul de pază și proiectele sistemelor de securitate mecanice și electronice."
+    ],
 
-            {
-                type: "paragraph",
-                text: "✅ Proiectarea sistemului tehnic de securitate respectă normele legale relevante în domeniu (cum ar fi Legea 333/2003, Legea 182/2002, HG585/2002, HG781/2002, H.G. 301/2012, Normativul I 18/2-2002) și are ca obiectiv stabilirea configurării echipamentelor care vor alcătui sistemul de securitate (senzori de detectare, camere video, alimentare cu energie, centrale de alarmare, sistem de control al accesului etc.)."
-            },
-            {
-                type: "paragraph",
-                text: "🔧 Proiectarea unui sistem de securitate presupune stabilirea unei configurații complexe de echipamente: centrale de alarmare, echipament de detectare și semnalizare optoacustică, camere video, sisteme de control al accesului și alimentarea acestora cu energie. Această configurare este stabilită prin intermediul unui Raport de Evaluare și Tratare a Riscurilor la Securitatea Fizică, un document elaborat de un membru al registrului evaluatorilor la securitatea fizică. Acest raport reprezintă baza adoptării măsurilor de securitate pentru obiective, bunuri și valori, conform legii, și este transpus în planul de pază și proiectele sistemelor de securitate mecanice și electronice."
-            },
-            {
-                type: "paragraph",
-                text: "📋 Ce include proiectul de executare al sistemului de securitate:"
-            },
-            {
-                type: "list",
-                items: [
-                    "Planul amplasamentului cu caracteristicile obiectivului și ale împrejurimilor",
-                    "Informații despre construcție (tipul construcției, dimensiunea încăperilor, materialele de construcție, grosimea pereților etc.)",
-                    "Prezentarea sistemului de securitate propus cu elementele componente",
-                    "Descrierea zonelor protejate și a elementelor de securitate alocate",
-                    "Amplasarea centralei de alarmare și a echipamentelor de monitorizare și control",
-                    "Calculul energetic al sistemului",
-                    "Date tehnice despre echipamentele utilizate",
-                    "Modalitatea de asigurare a garanției, service-ului și intervenției",
-                    "Documentele de certificare a echipamentelor",
-                    "Desenul obiectivului cu amplasarea sistemului de securitate"
-                ]
-            },
-            {
-                type: "paragraph",
-                text: "💡 Un proiect bine conceput al sistemului de securitate asigură eficiența investiției în etapele ulterioare de realizare a sistemului (achiziție de echipamente, instalare și mentenanță) și un nivel optim de protecție."
-            },
-            {
-                type: "paragraph",
-                text: "🔍 Servicii de proiectare oferite de Cremil T.S.P.I :"
-            },
-            {
-                type: "list",
-                items: [
-                    "Proiectare sisteme de securitate integrate",
-                    "Proiectare sisteme de alarmă",
-                    "Proiectare sisteme de supraveghere video",
-                    "Proiectare sisteme de control acces",
-                    "Proiectare sisteme de securitate perimetrală"
-                ]
-            },
-            {
-                type: "paragraph",
-                text: "📞 Contactați-ne acum pentru oferte personalizate și informații suplimentare.",
-                href: "/contact"
-            }
+    content: [
+      {
+        type: "paragraph",
+        text: "📌 Baza legală: 📌"
+      },
+      {
+        type: "paragraph",
+        text: "✅ Proiectarea sistemului tehnic de securitate respectă normele legale relevante în domeniu (cum ar fi Legea 333/2003, Legea 182/2002, HG585/2002, HG781/2002, H.G. 301/2012, Normativul I 18/2-2002) și are ca obiectiv stabilirea configurării echipamentelor care vor alcătui sistemul de securitate (senzori de detectare, camere video, alimentare cu energie, centrale de alarmare, sistem de control al accesului etc.)."
+      },
+      {
+        type: "paragraph",
+        text: "🔧 Proiectarea unui sistem de securitate presupune stabilirea unei configurații complexe de echipamente: centrale de alarmare, echipament de detectare și semnalizare optoacustică, camere video, sisteme de control al accesului și alimentarea acestora cu energie. Această configurare este stabilită prin intermediul unui Raport de Evaluare și Tratare a Riscurilor la Securitatea Fizică, un document elaborat de un membru al registrului evaluatorilor la securitatea fizică. Acest raport reprezintă baza adoptării măsurilor de securitate pentru obiective, bunuri și valori, conform legii, și este transpus în planul de pază și proiectele sistemelor de securitate mecanice și electronice."
+      },
+      {
+        type: "paragraph",
+        text: "📋 Ce include proiectul de executare al sistemului de securitate:"
+      },
+      {
+        type: "list",
+        items: [
+          "Planul amplasamentului cu caracteristicile obiectivului și ale împrejurimilor",
+          "Informații despre construcție (tipul construcției, dimensiunea încăperilor, materialele de construcție, grosimea pereților etc.)",
+          "Prezentarea sistemului de securitate propus cu elementele componente",
+          "Descrierea zonelor protejate și a elementelor de securitate alocate",
+          "Amplasarea centralei de alarmare și a echipamentelor de monitorizare și control",
+          "Calculul energetic al sistemului",
+          "Date tehnice despre echipamentele utilizate",
+          "Modalitatea de asigurare a garanției, service-ului și intervenției",
+          "Documentele de certificare a echipamentelor",
+          "Desenul obiectivului cu amplasarea sistemului de securitate"
         ]
-    }
-    ,
-
-    {
+      },
+      {
+        type: "paragraph",
+        text: "💡 Un proiect bine conceput al sistemului de securitate asigură eficiența investiției în etapele ulterioare de realizare a sistemului (achiziție de echipamente, instalare și mentenanță) și un nivel optim de protecție."
+      },
+      {
+        type: "paragraph",
+        text: "🔍 Servicii de proiectare oferite de Cremil T.S.P.I :"
+      },
+      {
+        type: "list",
+        items: [
+          "Proiectare sisteme de securitate integrate",
+          "Proiectare sisteme de alarmă",
+          "Proiectare sisteme de supraveghere video",
+          "Proiectare sisteme de control acces",
+          "Proiectare sisteme de securitate perimetrală"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "📞 Contactați-ne acum pentru oferte personalizate și informații suplimentare.",
+        href: "/contact"
+      }
+    ]
+  },
+  {
+        id: "supraveghere-video",
         title: "Instalare și mentenanță sistem supraveghere video",
-        slug: "instalare-mentenanta-sistem-supraveghere-video",
+        slug: "instalare-supraveghere-video",
         SourceImage: supraveghere,
+        description: [
+      "✅ Supravegherea unei clădiri de birouri a fost întotdeauna și va rămâne o modalitate ideală pentru orice companie de a monitoriza activitățile angajaților și de a detecta orice activitate cu potențial periculos. Camerele de supraveghere au un rol dublu, de monitorizare și de protecție, iar aceste două aspecte sunt asigurate doar printr-o instalare eficientă a camerelor de supraveghere, fie în interiorul, fie în exteriorul unei clădiri."
+    ],
         content: [
             {
                 type: "paragraph",
@@ -168,13 +351,15 @@ const servicesData = [
                 href: "/contact"
             }
         ]
-    }
-    ,
-
+    },
     {
+        id: "bariere-porti",
         title: "Bariere și Automatizări pentru Porți",
         slug: "sisteme-acces-bariere-automatizari-porti",
         SourceImage: bariere,
+        description: [
+      "🚧 Siguranță, confort și control total – toate într-un singur loc! Oferim servicii profesionale de montaj și mentenanță pentru bariere cu control acces și automatizări pentru porți, dedicate companiilor care își doresc un sistem eficient de securitate și acces."
+    ],
         content: [
             {
                 type: "paragraph",
@@ -219,11 +404,14 @@ const servicesData = [
             }
         ]
     },
-    ,
-    {
+     {
+      id: "sistem-efractie",
         title: "Instalare și mentenanță sistem efracție",
         slug: "instalare-mentenanta-sistem-efractie",
         SourceImage: sistemeefractie,
+        description: [
+      "✅ Alarmele sunt componente vitale ale securității noastre cotidiene, fiind cele mai eficiente mijloace de protejare a bunurilor și a siguranței personale. Pericolele pot apărea în orice moment, iar pentru o companie, indiferent de dimensiunea ei sau de numărul angajaților, asigurarea unei siguranțe optime este crucială. Instalarea unui sistem de alarmă performant poate oferi această protecție, eliminând multiplele riscuri la care sunt expuse bunurile și personalul unei clădiri de birouri."
+    ],
         content: [
             {
                 type: "paragraph",
@@ -276,12 +464,15 @@ const servicesData = [
                 href: "/contact"
             }
         ]
-    }
-    ,
+    },
     {
+        id: "sisteme-detectie-incendiu",
         title: "Instalare și mentenanță sisteme detecție incendiu",
         slug: "instalare-mentenanta-sisteme-detectie-incendiu",
         SourceImage: sistemincendiu,
+        description: [
+      "Fiecare viață umană este neprețuită, iar siguranța acestora este prioritară. Chiar și cu bunurile asigurate, există materiale care nu pot fi recuperate, de aceea, este esențial să existe un sistem de detecție și instalații de stingere a incendiilor pentru a minimiza pagubele."
+    ],
         content: [
             {
                 type: "paragraph",
@@ -329,12 +520,15 @@ const servicesData = [
                 href: "/contact"
             }
         ]
-    }
-    ,
+    },
     {
+        id: "sistem-videointerfonie",
         title: "Instalare și mentenanță sistem de videointerfonie",
         slug: "instalare-mentenanta-sistem-videointerfonie",
         SourceImage: videointerfoane,
+        description: [
+      "✅ Sistemul de videointerfonie reprezintă o adiție care poate aduce eleganță și securitate locuinței dumneavoastră."
+    ],
         content: [
             {
                 type: "paragraph",
@@ -395,12 +589,15 @@ const servicesData = [
                 href: "/contact"
             }
         ]
-    }
-    ,
+    },
     {
-        title: "Instalare și mentenanță sisteme de casă inteligentă și automatizări",
-        slug: "instalare-mentenanta-casa-inteligenta-automatizari",
+      id: "casa-inteligenta",
+      title: "Instalare și mentenanță sisteme de casă inteligentă și automatizări",
+        slug: "casa-inteligenta",
         SourceImage: casainteligenta,
+        description: [
+          "Eficientizarea consumului de energie electrică înseamnă că energia este consumată doar atunci, acolo și în cantitatea necesară. Prin controlul multizonal al sistemului de încălzire sau de climatizare, este posibil să se asigure temperatura dorită doar în încăperile utilizate."
+        ],
         content: [
             {
                 type: "paragraph",
@@ -492,12 +689,15 @@ const servicesData = [
                 href: "/contact"
             }
         ]
-    }
-    ,
+    },
     {
+      id: "voce-date",
         title: "Instalare și mentenanță sisteme de rețea voce-date",
-        slug: "instalare-mentenanta-retea-voce-date",
+        slug: "retea-voce-date",
         SourceImage: sistemeretea,
+        description: [
+          "Suntem un partener de încredere, dedicat clienților noștri și ne angajăm să oferim calitate și inovație în toate proiectele noastre. Suntem mereu la curent cu cele mai recente tehnologii și ne străduim să fim la înălțimea așteptărilor."
+        ],
         content: [
             {
                 type: "paragraph",
@@ -539,7 +739,19 @@ const servicesData = [
             }
         ]
     }
-    ,
 ];
 
 export default servicesData;
+
+
+
+
+
+
+
+
+
+
+  
+
+      
