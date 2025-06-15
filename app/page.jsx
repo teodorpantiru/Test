@@ -1,6 +1,6 @@
 "use client";
 import "./globals.css";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 
 import AboutUs from "./components/AboutUs";
@@ -64,7 +64,9 @@ useEffect(() => {
       </div>
       <div ref={servicesRef}>
         <main>
-      <ServicesSection />
+      <Suspense fallback={<div className="text-center text-gray-500 py-10">Se încarcă serviciile...</div>}>
+    <ServicesSection />
+  </Suspense>
      
     </main>
 
