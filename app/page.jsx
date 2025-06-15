@@ -1,3 +1,6 @@
+// app/page.jsx
+export const dynamic = "force-dynamic";
+
 import { Suspense } from "react";
 import ClientPageWrapper from "./components/ClientPageWrapper";
 
