@@ -19,8 +19,7 @@ export default function AboutUs({ aboutRef }) {
           </h2>
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-8 lg:text-left">
             Dacă aveți nevoie de o soluție completă pentru siguranța locuinței
-            sau afacerii din{" "}
-            <strong> Cluj, Florești sau in alte zone ale țării?</strong>, echipa{" "}
+            sau afacerii dumneavoastră , echipa{" "}
             <span className="font-semibold">Cremil T.S.P.I</span> vă oferă
             servicii profesionale de
             <strong> instalare sisteme de securitate</strong>,{" "}
