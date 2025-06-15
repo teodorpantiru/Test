@@ -25,8 +25,8 @@ export default function HomePage() {
           <p className="text-base sm:text-lg leading-relaxed mb-8 text-center lg:text-left">
             Căutați un{" "}
             <strong>
-              instalator de sisteme de securitate în Cluj, Florești (sau in alte
-              zone ale țării?)
+              instalator de sisteme de securitate în Cluj, Florești sau in alte
+              zone ale țării
             </strong>
             ?<span className="font-semibold"> Cremil T.S.P.I </span> vă oferă
             soluții complete pentru locuințe și afaceri, adaptate nevoilor
