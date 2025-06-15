@@ -1,36 +1,28 @@
 "use client";
 
-import { useMemo, useRef, useEffect, useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import servicesData from "../data/servicesData";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+import { useRouter } from "next/navigation";
 
 export default function ServicesSection() {
   const [selectedId, setSelectedId] = useState(null);
-  const selectedService = servicesData.find((s) => s.id === selectedId);
-  const cardRef = useRef(null);
+  const detailsRef = useRef(null);
+  const router = useRouter();
 
   useEffect(() => {
-    if (selectedService && cardRef.current) {
-      cardRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (detailsRef.current) {
+      const topOffset =
+        detailsRef.current.getBoundingClientRect().top + window.scrollY - 280; // -100px offset
+      window.scrollTo({ top: topOffset, behavior: "smooth" });
     }
-  }, [selectedService]);
+  }, [selectedId]);
 
-  const handleToggle = (serviceId) => {
-    if (selectedId === serviceId) {
-      setSelectedId(null); // închide cardul dacă e deja deschis
-    } else {
-      setSelectedId(serviceId); // deschide cardul selectat
-    }
+  const handleToggle = (id) => {
+    setSelectedId((prev) => (prev === id ? null : id));
   };
-
-  const groupedServices = useMemo(() => {
-    const result = [];
-    for (let i = 0; i < servicesData.length; i += 3) {
-      result.push(servicesData.slice(i, i + 3));
-    }
-    return result;
-  }, []);
 
   return (
     <section
@@ -42,15 +34,18 @@ export default function ServicesSection() {
           Serviciile Noastre
         </h2>
 
-        {groupedServices.map((group, rowIndex) => (
-          <div key={rowIndex} className="mb-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {group.map((service) => (
+        {/* Grid layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {servicesData.map((service) => {
+            const isSelected = selectedId === service.id;
+
+            return (
+              <React.Fragment key={service.id}>
+                {/* CARD */}
                 <div
-                  key={service.id}
                   onClick={() => handleToggle(service.id)}
                   className={`cursor-pointer bg-white shadow-xl rounded-xl p-4 sm:p-2 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 ${
-                    selectedId === service.id ? "border border-sky-500" : ""
+                    isSelected ? "border border-sky-500" : ""
                   }`}
                 >
                   <Image
@@ -66,44 +61,41 @@ export default function ServicesSection() {
                     </h3>
                   </div>
                 </div>
-              ))}
-            </div>
 
-            {/* Cardul universal sub grupul curent */}
-            {group.some((s) => s.id === selectedId) && selectedService && (
-              <div className="mt-8 flex justify-center">
-                <div
-                  ref={cardRef}
-                  className="scroll-mt-70 bg-white rounded-xl p-6 shadow-md border-t-4 border-blue-600 relative animate-fadeInScale"
-                >
-                  <button
-                    onClick={() => setSelectedId(null)}
-                    className="absolute top-3 right-3 text-gray-500 hover:text-red-600 text-2xl leading-none"
-                    aria-label="Închide"
-                  >
-                    &times;
-                  </button>
+                {/* DETALII */}
+                {isSelected && (
+                  <div className="col-span-1 sm:col-span-2 lg:col-span-3 mt-4">
+                    <div
+                      ref={detailsRef}
+                      className="bg-white rounded-xl p-6 shadow-md border-t-4 border-blue-600 relative animate-fadeInScale max-w-6xl mx-auto"
+                    >
+                      <button
+                        onClick={() => setSelectedId(null)}
+                        className="absolute top-3 right-3 text-gray-500 hover:text-red-600 text-2xl leading-none"
+                        aria-label="Închide"
+                      >
+                        &times;
+                      </button>
 
-                  <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                    {selectedService.title}
-                  </h3>
+                      <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                        {service.title}
+                      </h3>
 
-                  <p className="text-black">
-                    {selectedService.description}
-                  </p>
+                      <p className="text-black">{service.description}</p>
 
-                  {/* 🔗 Link către pagina dedicată SEO */}
-                  <Link
-                    href={`/servicii/${selectedService.slug}`}
-                    className="inline-block mt-4 text-blue-600 hover:underline font-medium"
-                  >
-                    Citește mai mult despre {selectedService.title}
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
+                      <Link
+                        href={`/servicii/${service.slug}?from=services#services-section`}
+                        className="inline-block mt-4 text-blue-600 hover:underline font-medium"
+                      >
+                        Citește mai mult despre {service.title}
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </React.Fragment>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

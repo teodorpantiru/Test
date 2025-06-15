@@ -3,8 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug;
-
+  const slug = params?.slug;
   const serviciu = servicesData.find((s) => s.slug === slug);
   if (!serviciu) return {};
 
@@ -21,8 +20,8 @@ export default function ServicePage({ params }) {
   if (!serviciu) return notFound();
 
   return (
-    <main className="bg-gradient-to-b from-white via-blue-50 to-blue-100 min-h-screen px-6 py-15">
-      <div className="max-w-4xl mx-auto bg-white text-gray-800 rounded-3xl shadow-xl p-8 sm:p-12 border border-blue-100">
+    <main className="bg-gradient-to-b from-white via-blue-50 to-blue-100 min-h-screen px-2 py-1">
+      <div className="max-w-4xl mx-auto bg-white text-gray-800 rounded-3xl shadow-xl p-3 sm:p-12 border border-blue-100">
 
         {/* 🔙 Back Button */}
         <div className="mb-6">
@@ -35,7 +34,7 @@ export default function ServicePage({ params }) {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl font-extrabold text-blue-900 mb-4 leading-snug tracking-tight">
+        <h1 className="text-2xl font-extrabold text-blue-900 mb-4 leading-snug tracking-tight text-start">
           {serviciu.title}
         </h1>
 

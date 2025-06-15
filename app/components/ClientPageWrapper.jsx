@@ -28,7 +28,10 @@ export default function ClientPageWrapper() {
   useEffect(() => {
     if (selectedSlug && servicesRef.current && isInitialLoad) {
       const yOffset = -120;
-      const y = servicesRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const y =
+        servicesRef.current.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
 
       window.scrollTo({ top: y, behavior: "auto" });
       setIsInitialLoad(false);
@@ -47,7 +50,8 @@ export default function ClientPageWrapper() {
     const ref = refs[section];
     if (ref?.current) {
       const yOffset = -80;
-      const y = ref.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const y =
+        ref.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   }
