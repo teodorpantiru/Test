@@ -2,8 +2,10 @@ import servicesData from "../../data/servicesData";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-export function generateMetadata({ params }) {
-  const serviciu = servicesData.find((s) => s.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const slug = params.slug;
+
+  const serviciu = servicesData.find((s) => s.slug === slug);
   if (!serviciu) return {};
 
   return {
