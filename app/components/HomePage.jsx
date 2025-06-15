@@ -34,8 +34,8 @@ export default function HomePage() {
             <strong>instalare, mentenanță și configurare</strong> pentru
             <strong>
               {" "}
-              camere de supraveghere video, sisteme de control acces și detecție
-              incendiu
+              camere de supraveghere video, proiectare sisteme de securitate,
+              sisteme de control acces sau detecție incendiu.
             </strong>
             . Ne diferențiem prin promptitudine, seriozitate și rezultate
             durabile.
