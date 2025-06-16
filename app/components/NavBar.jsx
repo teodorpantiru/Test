@@ -1,18 +1,11 @@
 "use client"; // only if you're using App Router and this is in /app
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import logo from "../../public/assets/logo.png";
 import logodark from "../../public/assets/logodark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaBuildingUser } from "react-icons/fa6";
-import {
-  faLocationDot,
-  faMessage,
-  faPhoneVolume,
-  faBars,
-  faXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FaToolbox, FaTools } from "react-icons/fa";
 
 export default function NavBar({ onNavigate }) {
