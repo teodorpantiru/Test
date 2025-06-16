@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import logodark from "../../public/assets/logodark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaBuildingUser } from "react-icons/fa6";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +20,12 @@ export default function NavBar({ onNavigate }) {
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo + Name */}
         <div className="flex items-center gap-3">
-          <Image src={logodark} width={60} height={60} alt="Cremil logo" />
+          <Image
+            src="/assets/logodark.png"
+            width={60}
+            height={60}
+            alt="Cremil logo"
+          />
           <span className="text-xl font-bold tracking-wide">
             Cremil T.S.P.I
           </span>
