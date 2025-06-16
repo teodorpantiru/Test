@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <Image
             src="/assets/logodark.png"
-            width={60}
-            height={60}
+            width={70}
+            height={70}
             alt="Cremil logo"
           />
           <h2 className="text-2xl font-bold tracking-wider uppercase mb-2">
