@@ -3,6 +3,7 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
 import logo from "../../public/assets/logo.png";
+import logodark from "../../public/assets/logodark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaBuildingUser } from "react-icons/fa6";
 import {
@@ -23,11 +24,11 @@ export default function NavBar({ onNavigate }) {
   }
 
   return (
-    <header className="bg-neutral-900 text-white shadow-md sticky top-0 z-50">
+    <header className="bg-[#f1f5f9] text-gray-800 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo + Name */}
         <div className="flex items-center gap-3">
-          <Image src={logo} width={60} height={60} alt="Cremil logo" />
+          <Image src={logodark} width={60} height={60} alt="Cremil logo" />
           <span className="text-xl font-bold tracking-wide">
             Cremil T.S.P.I
           </span>
@@ -37,35 +38,35 @@ export default function NavBar({ onNavigate }) {
         <nav className="hidden md:flex gap-8 text-sm font-medium uppercase">
           <button
             onClick={() => handleClick("acasa")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Acasa
           </button>
 
           <button
             onClick={() => handleClick("despre")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Despre
           </button>
 
           <button
             onClick={() => handleClick("servicii")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Servicii
           </button>
 
           <button
             onClick={() => handleClick("preturi")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Preturi
           </button>
 
           <button
             onClick={() => handleClick("contact")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Contact
           </button>
@@ -93,7 +94,7 @@ export default function NavBar({ onNavigate }) {
         </nav>
 
         {/* Contact Icons - Desktop */}
-        <div className="hidden md:flex gap-5 text-white text-lg">
+        <div className="hidden md:flex gap-5 text-gray-800 text-lg">
           <FaBuildingUser />
           <FaTools />
           <FaToolbox />
@@ -106,45 +107,45 @@ export default function NavBar({ onNavigate }) {
         >
           <FontAwesomeIcon
             icon={menuOpen ? faXmark : faBars}
-            className="h-6 w-6 text-white"
+            className="h-6 w-6 text-gray-800"
           />
         </button>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden px-6 pb-6 bg-neutral-900 flex flex-col gap-4 text-sm font-medium uppercase text-white">
+        <div className="md:hidden px-6 pb-6 bg-[#f1f5f9] flex flex-col gap-7 text-sm font-medium uppercase text-gray-800">
           <button
             onClick={() => handleClick("acasa")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Acasa
           </button>
 
           <button
             onClick={() => handleClick("despre")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Despre
           </button>
 
           <button
             onClick={() => handleClick("servicii")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Servicii
           </button>
 
           <button
             onClick={() => handleClick("preturi")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Preturi
           </button>
 
           <button
             onClick={() => handleClick("contact")}
-            className="hover:text-gray-300 transition"
+            className="hover:text-gray-500 transition"
           >
             Contact
           </button>
