@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logodark from "../../public/assets/logodark.png";
 
 export default function Footer() {
   return (
@@ -8,10 +7,9 @@ export default function Footer() {
         {/* Logo & Name */}
         <div className="flex flex-col items-center">
           <Image
-            className="mb-4"
-            src={logodark}
-            width={70}
-            height={70}
+            src="/assets/logodark.png"
+            width={60}
+            height={60}
             alt="Cremil logo"
           />
           <h2 className="text-2xl font-bold tracking-wider uppercase mb-2">
