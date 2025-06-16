@@ -7,6 +7,8 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
 
+import Script from "next/script";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -86,21 +88,19 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Google Analytics – înlocuiește ID-ul dacă e diferit
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-4BBWR6PH15"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-4BBWR6PH15');
-            `,
-          }}
-        /> */}
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-2QD5P346XY"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2QD5P346XY');
+          `}
+        </Script>
       </head>
 
       <body
