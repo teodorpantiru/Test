@@ -64,31 +64,54 @@ export default function RootLayout({ children }) {
         />
         <link rel="apple-touch-icon" href="/assets/logodark.png" />
 
-        {/* Structured Data (Schema.org) */}
+        {/*For Indexing Structured Data (Schema.org)  */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Cremil T.S.P.I",
-              description: metadata.description,
-              url: "https://www.cremil-tspi.com",
-              logo: "https://www.cremil-tspi.com/assets/logodark.png",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Cluj-Napoca",
-                addressRegion: "Cluj",
-                addressCountry: "RO",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Cremil T.S.P.I",
+                description: metadata.description,
+                url: "https://www.cremil-tspi.com",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://www.cremil-tspi.com/assets/logodark.png",
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Cluj-Napoca",
+                  addressRegion: "Cluj",
+                  addressCountry: "RO",
+                },
+                telephone: "+40753541498",
+                openingHours: "Mo-Fr 09:00-17:00",
+                areaServed: "Cluj, Florești, România",
+                sameAs: [
+                  "https://www.facebook.com/cremiltspi",
+                  "https://www.instagram.com/cremiltspi",
+                ],
               },
-              telephone: "+40753541498",
-              openingHours: "Mo-Fr 09:00-17:00",
-              areaServed: "Cluj, Florești, România",
-            }),
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                url: "https://www.cremil-tspi.com",
+                name: "Cremil T.S.P.I",
+                publisher: {
+                  "@type": "Organization",
+                  name: "Cremil T.S.P.I",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://www.cremil-tspi.com/assets/logodark.png",
+                  },
+                },
+              },
+            ]),
           }}
         />
 
-        {/* <!-- Google tag (gtag.js) --> */}
+        {/* <!-- Google tag / Analitics (gtag.js) --> */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-2QD5P346XY"
