@@ -29,7 +29,7 @@ export default function ServicesSection() {
       id="services-section"
       className="bg-gray-100 px-4 py-25 md:px-10 lg:px-20"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-800 mb-10">
           Serviciile Noastre
         </h2>

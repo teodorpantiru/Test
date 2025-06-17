@@ -36,7 +36,7 @@ export default function PriceSection() {
         <h2 className="text-4xl font-bold text-gray-800 mb-4">
           Pachetele Noastre
         </h2>
-        <p className="text-gray-700 mb-10 text-lg max-w-xl mx-auto ">
+        <p className="text-gray-700 md:text-xl mb-10 text-lg max-w-xl mx-auto ">
           Toate prețurile se stabilesc în funcție de cerințele specifice ale
           fiecărui proiect. Contactează-ne pentru o ofertă personalizată! 💬
         </p>

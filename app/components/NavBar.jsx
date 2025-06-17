@@ -67,27 +67,6 @@ export default function NavBar({ onNavigate }) {
           >
             Contact
           </button>
-
-          {/* <a
-            href="#acasa"
-            className="hover:text-gray-300 transition scroll-mt-28"
-            ref={detailsRef}
-          >
-            Acasă
-          </a>
-          <a
-            href="#despre"
-            className="hover:text-gray-300 transition scroll-mt-28"
-            ref={detailsRef}
-          >
-            Despre
-          </a>
-          <a href="#servicii" className="hover:text-gray-300 transition">
-            Servicii
-          </a>
-          <a href="#contact" className="hover:text-gray-300 transition">
-            Contact
-          </a> */}
         </nav>
 
         {/* Contact Icons - Desktop */}
@@ -146,34 +125,6 @@ export default function NavBar({ onNavigate }) {
           >
             Contact
           </button>
-          {/* <a
-            href="#acasa"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-gray-300 transition"
-          >
-            Acasă
-          </a>
-          <a
-            href="#despre"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-gray-300 transition"
-          >
-            Despre
-          </a>
-          <a
-            href="#servicii"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-gray-300 transition"
-          >
-            Servicii
-          </a>
-          <a
-            href="#contact"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-gray-300 transition"
-          >
-            Contact
-          </a> */}
 
           <div className="flex gap-4 pt-2 justify-center ">
             <FaBuildingUser />

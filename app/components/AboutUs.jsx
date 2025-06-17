@@ -4,7 +4,7 @@ import camereVideo from "../../public/assets/camere-video.webp";
 
 export default function AboutUs({ aboutRef }) {
   return (
-    <section className="relative isolate bg-gradient-to-br from-sky-100 via-white to-gray-100 overflow-hidden px-4 py-18 md:px-10 md:py-22 lg:px-12 lg:py-32">
+    <section className="relative isolate bg-gradient-to-br from-sky-100 via-white to-gray-100 overflow-hidden px-4 py-14 md:px-10 md:py-22 lg:px-12 lg:py-32">
       {/* Background grid pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-20 bg-[url('/grid.svg')] bg-repeat" />
 
@@ -17,7 +17,7 @@ export default function AboutUs({ aboutRef }) {
           >
             Despre noi
           </h2>
-          <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-8 lg:text-left">
+          <p className="text-gray-700 md:text-xl text-base sm:text-lg leading-relaxed mb-8 lg:text-left">
             Dacă aveți nevoie de o soluție completă pentru siguranța locuinței
             sau afacerii dumneavoastră , echipa{" "}
             <span className="font-semibold">Cremil T.S.P.I</span> vă oferă
