@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
               name: "Cremil T.S.P.I",
               description: metadata.description,
               url: "https://www.cremil-tspi.com",
-              logo: "https://www.cremil-tspi.com/assets/logo-big.png",
+              logo: "https://www.cremil-tspi.com/assets/logodark.png",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Cluj-Napoca",
