@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f1f5f9] text-gray-800 px-4 py-8 md:px-10">
+    <footer className="bg-[#f1f5f9] text-gray-800 px-4 pt-14 pb-8 md:px-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-center">
         {/* Logo & Name */}
         <div className="flex flex-col items-center">
@@ -91,7 +91,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom */}
-      <div className="mt-10 border-t border-gray-800 pt-6 text-center text-xs text-gray-800">
+      <div className="mt-10 border-t border-gray-800 pt-8 text-center text-xs text-gray-800">
         &copy; {new Date().getFullYear()} Cremil T.S.P.I. Toate drepturile
         rezervate.
       </div>
