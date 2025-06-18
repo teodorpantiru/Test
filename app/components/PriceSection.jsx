@@ -33,7 +33,7 @@ export default function PriceSection() {
   return (
     <section className="bg-white px-4 py-14 md:px-10 md:py-22 lg:px-12 lg:py-32">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">
           Pachetele Noastre
         </h2>
         <p className="text-gray-700 md:text-xl mb-10 text-lg max-w-xl mx-auto ">

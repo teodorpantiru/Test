@@ -13,7 +13,7 @@ function Galerie() {
   return (
     <div className="bg-neutral-50 w-full overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 text-center py-16 sm:py-24">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">
           Lucrări recente
         </h2>
         <p className="text-gray-700 md:text-xl text-lg max-w-xl mx-auto">
