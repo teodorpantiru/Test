@@ -45,3 +45,54 @@ body {
     }
   }
 }
+/* Poziționează săgețile pe mijlocul sliderului, la stânga și la dreapta */
+.slick-prev,
+.slick-next {
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 9999px;
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Ajustează poziția pe axa X */
+.slick-prev {
+  left: -2.5rem; /* ajustează dacă e nevoie */
+}
+
+.slick-next {
+  right: -2.5rem; /* ajustează dacă e nevoie */
+}
+
+/* Iconițele din săgeți */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.slick-arrow {
+  display: inline-block !important;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.slick-slider .slick-dots {
+  margin-top: 1rem;
+}
+
+.slick-slider {
+  text-align: center; /* ✅ așează butoanele sub slider, centrate */
+}
+
+@media (max-width: 640px) {
+  .slick-prev,
+  .slick-next {
+    display: block !important;
+  }
+}

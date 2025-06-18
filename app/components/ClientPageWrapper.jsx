@@ -11,6 +11,7 @@ import NavBar from "./NavBar";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import PriceSection from "./PriceSection";
+import Carousel from "./Carousel";
 import ServicesSection from "./ServicesSection";
 
 export default function ClientPageWrapper() {
@@ -72,6 +73,9 @@ export default function ClientPageWrapper() {
       </div>
       <div ref={priceRef}>
         <PriceSection />
+      </div>
+      <div>
+        <Carousel />
       </div>
       <div ref={contactRef}>
         <Contact />

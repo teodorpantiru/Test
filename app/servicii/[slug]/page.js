@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 export async function generateMetadata({ params }) {
+
   const slug = params?.slug;
   const serviciu = servicesData.find((s) => s.slug === slug);
   if (!serviciu) return {};
