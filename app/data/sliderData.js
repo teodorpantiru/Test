@@ -35,7 +35,7 @@ export const settings = {
     ],
     appendDots: dots => (
         <div className="mt-6 ">
-            <ul className="flex justify-center align-center gap-3 pr-2 sm:pr-0">{dots}</ul>
+            <ul className="flex justify-center align-center gap-3 pr-4 sm:pr-0">{dots}</ul>
         </div>
     ),
     customPaging: () => (
