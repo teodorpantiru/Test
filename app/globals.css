@@ -46,6 +46,12 @@ body {
   }
 }
 /* Poziționează săgețile pe mijlocul sliderului, la stânga și la dreapta */
+.slick-slider {
+  /* background-color: #f9fafb;  */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
 .slick-prev,
 .slick-next {
   position: absolute !important;
