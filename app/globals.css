@@ -48,7 +48,7 @@ body {
 /* Poziționează săgețile pe mijlocul sliderului, la stânga și la dreapta */
 .slick-slider {
   /* background-color: #f9fafb;  */
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 1rem;
 }
 
@@ -61,19 +61,19 @@ body {
   background-color: #2563eb;
   color: white;
   border-radius: 9999px;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   width: 2.5rem;
   height: 2.5rem;
 }
 
 /* Ajustează poziția pe axa X */
-.slick-prev {
-  left: -2.5rem; /* ajustează dacă e nevoie */
+/* .slick-prev {
+  left: -2.5rem;
 }
 
 .slick-next {
-  right: -2.5rem; /* ajustează dacă e nevoie */
-}
+  right: -2.5rem;
+} */
 
 /* Iconițele din săgeți */
 .slick-prev:before,
@@ -85,7 +85,7 @@ body {
 .slick-arrow {
   display: inline-block !important;
   vertical-align: middle;
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 
 .slick-slider .slick-dots {
@@ -105,3 +105,14 @@ body {
 /* #services-section {
   scroll-margin-top: -260px;
 } */
+/* Mărime și culoare puncte (dots) slick */
+.slick-dots li button:before {
+  font-size: 1.2rem !important;
+  color: #9ca3af !important;
+  opacity: 1 !important;
+  margin-top: 25px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2563eb !important;
+}
