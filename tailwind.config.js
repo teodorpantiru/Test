@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       scrollMargin: {
-        24: '6rem',
+        30: '120px',
       },
     },
   },

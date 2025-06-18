@@ -12,8 +12,8 @@ const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 function Galerie() {
   return (
-    <div className="bg-neutral-50">
-      <div className="align-center items-center max-w-7xl mx-auto text-center  py-15 sm:py-25 md:py-15 lg:py-15 sm:my-20">
+    <div className="bg-neutral-50 px-4">
+      <div className="align-center items-center max-w-7xl mx-auto text-center py-15 sm:py-25 md:py-15 lg:py-15 sm:my-20">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">
           Lucrări recente
         </h2>

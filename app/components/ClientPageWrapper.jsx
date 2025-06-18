@@ -52,9 +52,22 @@ export default function ClientPageWrapper() {
 
     const ref = refs[section];
     if (ref?.current) {
-      const yOffset = -80;
+      const width = window.innerWidth;
+      let yOffset = -80; // Start with a bigger offset for consistent top alignment
+
+      if (width <= 1024) yOffset = -150; // Tablets
+      if (width <= 768) yOffset = -120; // Mobile
+      if (width <= 480) yOffset = -350; // Small mobile
+
+      // Detect iOS for extra scroll compensation
+      const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isiOS && width <= 430) {
+        yOffset -= 40; // Extra offset for notch/safe area
+      }
+
       const y =
         ref.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   }
