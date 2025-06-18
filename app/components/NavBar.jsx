@@ -62,6 +62,13 @@ export default function NavBar({ onNavigate }) {
           </button>
 
           <button
+            onClick={() => handleClick("lucrari")}
+            className="hover:text-gray-500 transition"
+          >
+            Lucrari
+          </button>
+
+          <button
             onClick={() => handleClick("contact")}
             className="hover:text-gray-500 transition"
           >
@@ -117,6 +124,13 @@ export default function NavBar({ onNavigate }) {
             className="hover:text-gray-500 transition"
           >
             Preturi
+          </button>
+
+          <button
+            onClick={() => handleClick("lucrari")}
+            className="hover:text-gray-500 transition"
+          >
+            Lucrari
           </button>
 
           <button

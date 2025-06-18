@@ -22,6 +22,7 @@ export default function ClientPageWrapper() {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const priceRef = useRef(null);
+  const workRef = useRef(null);
   const contactRef = useRef(null);
 
   const [isInitialLoad, setIsInitialLoad] = useState(true);
@@ -45,6 +46,7 @@ export default function ClientPageWrapper() {
       despre: aboutRef,
       servicii: servicesRef,
       preturi: priceRef,
+      lucrari: workRef,
       contact: contactRef,
     };
 
@@ -74,7 +76,7 @@ export default function ClientPageWrapper() {
       <div ref={priceRef}>
         <PriceSection />
       </div>
-      <div>
+      <div ref={workRef}>
         <Carousel />
       </div>
       <div ref={contactRef}>
