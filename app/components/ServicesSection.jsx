@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 export default function ServicesSection() {
   const [selectedId, setSelectedId] = useState(null);
@@ -42,25 +43,34 @@ export default function ServicesSection() {
             return (
               <React.Fragment key={service.id}>
                 {/* CARD */}
-                <div
-                  onClick={() => handleToggle(service.id)}
-                  className={`cursor-pointer bg-white shadow-xl rounded-xl p-4 sm:p-2 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 ${
-                    isSelected ? "border border-sky-500" : ""
-                  }`}
+                <motion.div
+                  initial={{ x: 100, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="w-full text-center lg:text-left"
                 >
-                  <Image
-                    src={service.SourceImage}
-                    alt={service.title}
-                    width={96}
-                    height={96}
-                    className="rounded-full object-cover w-20 h-20 sm:w-24 sm:h-24 shrink-0"
-                  />
-                  <div className="text-center sm:text-left flex-1">
-                    <h3 className="text-base font-semibold sm:text-md text-gray-800 hover:text-sky-700 transition-colors duration-300 leading-snug break-words">
-                      {service.title}
-                    </h3>
+                  <div
+                    onClick={() => handleToggle(service.id)}
+                    className={`cursor-pointer bg-white shadow-xl rounded-xl p-4 sm:p-2 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 ${
+                      isSelected ? "border border-sky-500" : ""
+                    }`}
+                  >
+                    <Image
+                      src={service.SourceImage}
+                      alt={service.title}
+                      width={96}
+                      height={96}
+                      className="rounded-full object-cover w-20 h-20 sm:w-24 sm:h-24 shrink-0"
+                    />
+
+                    <div className="text-center sm:text-left flex-1">
+                      <h3 className="text-base font-semibold sm:text-md text-gray-800 hover:text-sky-700 transition-colors duration-300 leading-snug break-words">
+                        {service.title}
+                      </h3>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* DETALII */}
                 {isSelected && (

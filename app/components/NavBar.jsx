@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaBuildingUser } from "react-icons/fa6";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FaToolbox, FaTools } from "react-icons/fa";
+import Link from "next/link";
 
 export default function NavBar({ onNavigate }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,10 @@ export default function NavBar({ onNavigate }) {
     <header className="bg-[#f1f5f9] text-gray-800 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo + Name */}
-        <div className="flex items-center gap-3">
+        <div
+          className="flex items-center gap-3 cursor-pointer"
+          onClick={() => handleClick("acasa")}
+        >
           <Image
             src="/assets/logodark.png"
             width={60}

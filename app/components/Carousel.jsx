@@ -35,7 +35,7 @@ function Galerie() {
                     alt="serviciu"
                     width={800}
                     height={600}
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full transition duration-300 hover:scale-105"
                   />
                 </div>
               </div>
