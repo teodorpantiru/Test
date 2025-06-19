@@ -77,7 +77,7 @@ export default function ServicesSection() {
                   <div className="col-span-1 sm:col-span-2 lg:col-span-3 mt-4">
                     <div
                       ref={detailsRef}
-                      className="bg-white rounded-xl p-6 shadow-md border-t-4 border-blue-600 relative animate-fadeInScale max-w-6xl mx-auto"
+                      className="bg-white rounded-xl p-6 shadow-md border-t-4 border-blue-600 relative animate-fadeInScale max-w-7xl mx-auto"
                     >
                       <button
                         onClick={() => setSelectedId(null)}

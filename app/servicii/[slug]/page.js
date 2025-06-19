@@ -54,7 +54,7 @@ export default function ServicePage({ params }) {
             }
             if (block.type === "list") {
               return (
-                <ul key={i} className="list-disc list-inside space-y-2 text-blue-800 font-medium">
+                <ul key={i} className="list-disc list-inside space-y-2 text-gray-700 font-medium">
                   {block.items.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
