@@ -1,5 +1,5 @@
 import Image from "next/image";
-import homepage from "../../public/assets/sisteme-securitate.jpg";
+import homepage from "../../public/assets/camere-supraveghere.jpg";
 import { motion } from "framer-motion";
 
 export default function HomePage() {
@@ -47,7 +47,7 @@ export default function HomePage() {
               alt="Sistem de securitate"
               width={450}
               height={450}
-              className="rounded-full object-cover w-[350px] h-[350px] sm:w-[320px] sm:h-[320px]  lg:w-[480px] lg:h-[480px] shadow-2xl transition duration-300 hover:scale-105"
+              className="rounded-full border-3 border-gray-800 object-cover w-[350px] h-[350px] sm:w-[320px] sm:h-[320px]  lg:w-[480px] lg:h-[480px] shadow-2xl transition duration-300 hover:scale-105"
             />
           </motion.div>
         </div>
