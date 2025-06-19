@@ -47,7 +47,7 @@ export default function HomePage() {
               alt="Sistem de securitate"
               width={450}
               height={450}
-              className="rounded-full border-3 border-gray-800 object-cover w-[350px] h-[350px] sm:w-[320px] sm:h-[320px]  lg:w-[480px] lg:h-[480px] shadow-2xl transition duration-300 hover:scale-105"
+              className="rounded-full border-2 border-gray-800 object-cover w-[350px] h-[350px] sm:w-[320px] sm:h-[320px]  lg:w-[480px] lg:h-[480px] shadow-2xl transition duration-300 hover:scale-105"
             />
           </motion.div>
         </div>
@@ -55,51 +55,3 @@ export default function HomePage() {
     </section>
   );
 }
-
-// "use client";
-
-// import dynamic from "next/dynamic";
-// const RotatingGlobe = dynamic(() => import("./RotatingGlobe"), { ssr: false });
-
-// export default function HomePage() {
-//   return (
-//     <section className="bg-slate-900 px-6 py-28 lg:py-36 overflow-hidden">
-//       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-20">
-//         {/* Text Section */}
-//         <div className="w-full lg:w-1/2 text-center lg:text-left">
-//           <h1 className="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight sm:leading-tight mb-6">
-//             <span className="block text-yellow-400 mb-2">
-//               Protejăm ceea ce contează.
-//             </span>
-//             Soluții inteligente pentru securitatea ta.
-//           </h1>
-
-//           <p className="text-gray-300 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
-//             Cu experiență și promptitudine, Cremil T.S.P.I oferă instalare și
-//             mentenanță pentru sisteme de supraveghere video, alarme, control
-//             acces și detecție incendiu în Cluj, Florești și în întreaga țară.
-//           </p>
-
-//           <div className="flex justify-center lg:justify-start">
-//             <a
-//               href="#servicii"
-//               className="bg-yellow-400 text-slate-900 font-semibold px-8 py-3 rounded-full hover:bg-yellow-300 transition-transform duration-300 transform hover:-translate-y-1 hover:shadow-xl"
-//             >
-//               Află mai multe
-//             </a>
-//           </div>
-//         </div>
-
-//         {/* Globe 3D Section */}
-//         <div className="w-full lg:w-1/2 flex justify-center">
-//           <div className="relative">
-//             <div className="absolute inset-0 blur-2xl opacity-20 rounded-full bg-yellow-400 w-full h-full scale-105"></div>
-//             <div className="relative z-10">
-//               {/* <RotatingGlobe /> */}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }

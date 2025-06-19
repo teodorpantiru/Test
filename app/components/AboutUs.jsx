@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import camereVideo from "../../public/assets/camere-video.webp";
+import camereVideo from "../../public/assets/cabluri.jpg";
 import { motion } from "framer-motion";
 
 export default function AboutUs({ aboutRef }) {
