@@ -17,7 +17,7 @@ export default function HomePage() {
           <div className="w-full text-center lg:text-left">
             <h1 className="my-5 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight text-white">
               <span className="block">
-                Soluții de securitate pentru
+                Sisteme de securitate pentru
                 <span className="text-yellow-400"> locuințe</span>
               </span>
               <span className="block text-yellow-400"> și afaceri.</span>
@@ -28,7 +28,7 @@ export default function HomePage() {
             <p className="text-base sm:text-lg md:text-xl text-gray-300 lg:mb-8 sm:mb-10 max-w-2xl mx-auto lg:mx-0 px-2 sm:px-0">
               Cremil T.S.P.I instalează sisteme inteligente de supraveghere,
               alarme, control acces și detecție incendiu în Cluj, Florești și
-              alte zone din România. Rapid, profesionist și personalizat.
+              alte zone din România, rapid, profesionist și personalizat.
             </p>
           </div>
         </motion.div>
