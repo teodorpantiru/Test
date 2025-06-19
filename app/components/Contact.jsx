@@ -39,7 +39,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="w-full text-center lg:text-left"
           >
-            <div className="bg-white shadow-xl rounded-3xl p-10 lg:p-12 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50">
+            <div className="bg-white shadow-xl rounded-3xl text-left p-10 lg:p-12 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50">
               <div className="space-y-6 text-gray-700 text-lg">
                 <div className="flex items-start gap-4">
                   <FaMapMarkerAlt className="text-sky-600 text-2xl mt-1" />
