@@ -20,19 +20,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title:
-    "Instalare Aer Condiționat Cluj & Florești | Sisteme de Securitate Cremil T.S.P.I",
+  title: "Sisteme Securitate & Aer Condiționat Romania | Cremil T.S.P.I.",
 
   description:
-    "Instalare aer condiționat Cluj și Florești rapid și profesionist. Oferim și montaj sisteme de supraveghere video, detectoare fum ISU, alarme, automatizări porți și bariere auto. Soluții complete pentru siguranță și confort.",
+    "Montam aer conditionat, camere video, alarme antiefractie, sisteme antiincendiu, porti si bariere automate in Cluj, Bistrita si judetele invecinate. Contacteaza-ne pentru o oferta!",
 };
-// {
-//   title:
-//     "Instalare Camere Supraveghere Cluj Romania |  Cremil T.S.P.I",
-
-//   description:
-//     "Cauti cele mai bune servicii de instalare camere de supraveghere ? Le-ai gasit la noi! Echipa noastra instaleaza camere de supraveghere de peste un deceniu. Da click sa ne cunoastem!",
-// };
 
 export default function RootLayout({ children }) {
   return (
@@ -46,11 +38,14 @@ export default function RootLayout({ children }) {
           content="
   instalare aer condiționat Cluj,
   montaj aer condiționat Florești,
-  aer condiționat Cluj,
-  firmă aer condiționat Cluj,
-  instalare AC Cluj Florești,
-  sisteme securitate Cluj,
+  sisteme securitate floresti,
+  sisteme securitate cluj ,
+  instalare sistem supraveghere video cluj ,
+  automatizari porti cluj,
+   automatizari porti floresti
   detectoare fum ISU,
+   instalare sistem efracție cluj,
+   instalare interfon floresti,
   supraveghere video exterior Cluj,
   automatizare porți auto Cluj
 "
