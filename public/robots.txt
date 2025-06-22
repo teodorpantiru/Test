@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.cremil-tspi.com
+
+# Sitemaps
+Sitemap: https://www.cremil-tspi.com/sitemap.xml
