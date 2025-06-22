@@ -80,7 +80,7 @@ export default function Footer() {
             <li>
               <span className="font-semibold">Email:</span>{" "}
               <a
-                href="mailto:creta_gabriel@hotmail.it"
+                href="mailto:office@cremil-tspi.com"
                 className="hover:text-gray-500"
               >
                 office@cremil-tspi.com

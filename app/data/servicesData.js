@@ -12,9 +12,9 @@ import aerconditionat from "../../public/assets/Cards/aparat-aer-conditionat.web
 
 const servicesData = [
     {
-        id: "instalare-aer-conditionat",
-        title: "Instalare Aer Condiționat",
-        slug: "instalare-aer-conditionat",
+        id: "montaj-aer-conditionat",
+        title: "Montaj Aer Conditionat",
+        slug: "montaj-aer-conditionat",
         SourceImage: aerconditionat,
         description: [
             " ❄️ Răcorește-ți casa sau biroul cu un sistem montat profesionist, rapid și fără bătăi de cap. Garantăm o instalare sigură, curată și eficientă pentru confortul tău maxim!"
@@ -63,7 +63,7 @@ const servicesData = [
     },
     {
         id: "proiectare-sisteme-securitate",
-        title: "Proiectare sisteme de securitate",
+        title: "Proiectare Sisteme de Securitate",
         slug: "proiectare-sisteme-de-securitate",
         SourceImage: sistemesecuritate,
         description: [
@@ -128,9 +128,9 @@ const servicesData = [
         ]
     },
     {
-        id: "supraveghere-video",
-        title: "Instalare și mentenanță sistem supraveghere video",
-        slug: "instalare-supraveghere-video",
+        id: "camere-supraveghere",
+        title: "Instalare Camere Supraveghere",
+        slug: "camere de supraveghere",
         SourceImage: supraveghere,
         description: [
             "✅ Fiecare colț contează când vine vorba de siguranța ta 🎥. Instalăm camere de supraveghere moderne și ne ocupăm de mentenanță periodică 🛠️, ca tu să ai control total, zi și noapte."
@@ -178,9 +178,9 @@ const servicesData = [
         ]
     },
     {
-        id: "bariere-porti",
-        title: "Bariere și Automatizări pentru Porți",
-        slug: "sisteme-acces-bariere-automatizari-porti",
+        id: "automatizari-bariere-porti",
+        title: "Automatizari Porti si Bariere ",
+        slug: "automatizari-bariere-porti",
         SourceImage: bariere,
         description: [
             "🚧 Confortul începe de la intrare 🚗. Instalăm sisteme automate pentru porți și bariere care îți ușurează accesul și îți protejează proprietatea 🔒 — totul rapid, sigur și adaptat nevoilor tale."
@@ -230,9 +230,9 @@ const servicesData = [
         ]
     },
     {
-        id: "sistem-efractie",
-        title: "Instalare și mentenanță sistem efracție",
-        slug: "instalare-mentenanta-sistem-efractie",
+        id: "sistem-antiefractie",
+        title: "Instalare Sistem Antiefractie",
+        slug: "sistem-antiefractie",
         SourceImage: sistemeefractie,
         description: [
             "Fii mereu cu un pas înaintea riscurilor 🚨. Instalăm sisteme moderne antiefracție care reacționează instant, iar mentenanța regulată 🔧 îți garantează funcționarea optimă în orice moment."

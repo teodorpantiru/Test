@@ -44,7 +44,7 @@ export default function HomePage() {
           >
             <Image
               src={homepage}
-              alt="Sistem de securitate"
+              alt="Sisteme de securitate"
               width={450}
               height={450}
               className="rounded-full border-2 border-gray-800 object-cover w-[350px] h-[350px] sm:w-[320px] sm:h-[320px]  lg:w-[480px] lg:h-[480px] shadow-2xl transition duration-300 hover:scale-105"

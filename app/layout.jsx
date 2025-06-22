@@ -26,6 +26,13 @@ export const metadata = {
   description:
     "Instalare aer condiționat Cluj și Florești rapid și profesionist. Oferim și montaj sisteme de supraveghere video, detectoare fum ISU, alarme, automatizări porți și bariere auto. Soluții complete pentru siguranță și confort.",
 };
+// {
+//   title:
+//     "Instalare Camere Supraveghere Cluj Romania |  Cremil T.S.P.I",
+
+//   description:
+//     "Cauti cele mai bune servicii de instalare camere de supraveghere ? Le-ai gasit la noi! Echipa noastra instaleaza camere de supraveghere de peste un deceniu. Da click sa ne cunoastem!",
+// };
 
 export default function RootLayout({ children }) {
   return (
