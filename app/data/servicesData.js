@@ -130,7 +130,7 @@ const servicesData = [
     {
         id: "camere-supraveghere",
         title: "Instalare Camere Supraveghere",
-        slug: "camere de supraveghere",
+        slug: "camere-de-supraveghere",
         SourceImage: supraveghere,
         description: [
             "✅ Fiecare colț contează când vine vorba de siguranța ta 🎥. Instalăm camere de supraveghere moderne și ne ocupăm de mentenanță periodică 🛠️, ca tu să ai control total, zi și noapte."
