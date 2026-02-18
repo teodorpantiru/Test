@@ -20,10 +20,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sisteme Securitate & Aer Condiționat Romania | Cremil T.S.P.I.",
+  metadataBase: new URL("https://www.cremil-tspi.com"),
 
+  title: "Sisteme Securitate & Aer Condiționat Romania | Cremil T.S.P.I.",
   description:
     "Montam aer conditionat, camere video, alarme antiefractie, sisteme antiincendiu, porti si bariere automate in Cluj, Bistrita si judetele invecinate. Contacteaza-ne pentru o oferta!",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  // 3. Opțional: Ajută Google să știe că site-ul e gata de indexat
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
